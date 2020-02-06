@@ -1,0 +1,24 @@
+language: python
+python:
+  - "3.6"
+
+branches:
+  only:
+  - master
+  - develop
+  - /^release-.*$/
+
+install:
+  - go get github.com/icon-project/rewardcalculator/cmd/icon_rc
+  - pip install -r requirements.txt
+
+script:
+  - python setup.py test
+
+deploy:
+  provider: pypi
+  distributions: sdist bdist_wheel
+  user: iconfoundation
+  password: $PYPI_PW
+  on:
+    branch: master

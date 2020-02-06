@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout2"
+    tools:context=".activity.RequestPresentationActivity">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="activity"
+            type="com.iitp.iitp_demo.activity.RequestPresentationActivity" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/layout_appbar" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:gravity="center"
+            android:text="@{activity.message1}"
+            android:textColor="@color/blackText"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            android:padding="20dp"
+            app:cardBackgroundColor="@color/backcolor"
+            app:cardCornerRadius="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/yesBtnRipple"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv1"
+            app:layout_constraintVertical_bias="0.0">
+
+            <LinearLayout
+                android:id="@+id/id_credential"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/listviewborder"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/name1"
+                        android:textColor="@color/blackAlpahText"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/nameTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@{activity.name}"
+                        android:textColor="@color/blackAlpahText"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/idnumber1"
+                        android:textColor="@color/blackAlpahText"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/idnumberTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@{activity.idNumber}"
+                        android:textColor="@color/blackAlpahText"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/address1"
+                        android:textColor="@color/blackAlpahText"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/addressTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@{activity.address}"
+                        android:textColor="@color/blackAlpahText"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/date1"
+                        android:textColor="@color/blackAlpahText"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/dateTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@{activity.date}"
+                        android:textColor="@color/blackAlpahText"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/issuer1"
+                        android:textColor="@color/blackAlpahText"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/issuerTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@{activity.issuer}"
+                        android:textColor="@color/blackAlpahText"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/did1"
+                        android:textColor="@color/blackAlpahText"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/metaIdTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@{activity.metaId}"
+                        android:textColor="@color/blackAlpahText"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="right|bottom"
+                    android:background="@drawable/credential1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/office_credential"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/listviewborder"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/name1"
+                        android:textColor="@color/blackAlpahText"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/office_credential_nameTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@{activity.name}"
+                        android:textColor="@color/blackAlpahText"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/position1"
+                        android:textColor="@color/blackAlpahText"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/office_credential_postionTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@{activity.position}"
+                        android:textColor="@color/blackAlpahText"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/office1"
+                        android:textColor="@color/blackAlpahText"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/office_credential_officeTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@{activity.department}"
+                        android:textColor="@color/blackAlpahText"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/address1"
+                        android:textColor="@color/blackAlpahText"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/office_credential_addressTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@{activity.address}"
+                        android:textColor="@color/blackAlpahText"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/regist_date1"
+                        android:textColor="@color/blackAlpahText"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/office_credential_dateTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@{activity.regDate}"
+                        android:textColor="@color/blackAlpahText"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/signature2" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/yesBtnRipple"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/noBtnRipple"
+            app:mrl_rippleColor="@color/color2"
+            app:mrl_rippleOverlay="true"
+            app:mrl_rippleRoundedCorners="16dp">
+
+            <Button
+                android:id="@+id/yesBtn"
+                style="@style/AppTheme.PrimarySmallButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="@{()->activity.yesClick()}"
+                android:text="@string/yes" />
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/noBtnRipple"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:mrl_rippleColor="@color/color2"
+            app:mrl_rippleOverlay="true"
+            app:mrl_rippleRoundedCorners="16dp">
+
+            <Button
+                android:id="@+id/noBtn"
+                style="@style/AppTheme.PrimarySmallButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:onClick="@{()->activity.noClick()}"
+                android:text="@string/no" />
+        </com.balysv.materialripple.MaterialRippleLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

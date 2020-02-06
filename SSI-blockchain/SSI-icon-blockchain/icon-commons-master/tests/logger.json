@@ -1,0 +1,26 @@
+{
+	"log": {
+        "logger": "test",
+		"level": "debug",
+		"filePath": "./log/icon_service.log",
+        "outputType": "console|file",
+        "rotate": {
+            "type": "period|bytes",
+            "period": "daily",
+            "interval": 1,
+            "maxBytes": 10485760,
+            "backupCount": 10
+        }
+	},
+	"scoreRootPath": ".score",
+	"stateDbRootPath": ".statedb",
+	"channel": "loopchain_default",
+	"amqpKey": "7100",
+	"amqpTarget": "127.0.0.1",
+	"iconServiceBigStopLimit": 5000000,
+	"builtinScoreOwner": "hxebf3a409845cd09dcb5af31ed5be5e34e2af9433",
+  	"service": {
+		"fee": false,
+		"audit": false
+	}
+}

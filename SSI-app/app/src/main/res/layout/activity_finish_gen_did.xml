@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    tools:context=".activity.FinishGenerateDidActivity">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="activity"
+            type="com.iitp.iitp_demo.activity.FinishGenerateDidActivity" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/layout_appbar" />
+
+        <TextView
+            android:id="@+id/noMeataIdTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="520dp"
+            android:gravity="center"
+            android:text="@string/gendidcomplete"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <TextView
+            android:id="@+id/MetaIdTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="@{activity.metaId}"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/btnRipple"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/noMeataIdTv"
+            app:layout_constraintVertical_bias="0.227" />
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/btnRipple"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:mrl_rippleColor="@color/color2"
+            app:mrl_rippleOverlay="true"
+            app:mrl_rippleRoundedCorners="16dp">
+
+            <Button
+                android:id="@+id/generateDidBtn"
+                style="@style/AppTheme.PrimarySmallButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="@{()->activity.btnClick()}"
+                android:text="@string/ok"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

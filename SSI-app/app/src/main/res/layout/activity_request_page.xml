@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.RequestPageActivity">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="activity"
+            type="com.iitp.iitp_demo.activity.RequestPageActivity" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/layout_appbar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="514dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/link1Ripple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:mrl_rippleColor="@color/color2"
+                app:mrl_rippleOverlay="true"
+                app:mrl_rippleRoundedCorners="16dp">
+
+                <Button
+                    android:id="@+id/link1"
+                    style="@style/AppTheme.PrimarySmallButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/tab_title_4"
+                    android:textColor="@color/white"
+                    android:onClick="@{()->activity.requestIdBtn()}"
+                    android:textSize="16sp" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_marginTop="16dp"
+                android:id="@+id/link2Ripple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:mrl_rippleColor="@color/color2"
+                app:mrl_rippleOverlay="true"
+                app:mrl_rippleRoundedCorners="16dp">
+
+                <Button
+                    android:id="@+id/link2"
+                    style="@style/AppTheme.PrimarySmallButton"
+                    android:layout_width="match_parent"
+                    android:onClick="@{()->activity.requestOfficeBtn()}"
+                    android:layout_height="match_parent"
+                    android:text="@string/tab_title_5"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:weightSum="3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/btn1Ripple"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:mrl_rippleColor="@color/color2"
+                app:mrl_rippleOverlay="true"
+                app:mrl_rippleRoundedCorners="16dp">
+
+                <Button
+                    android:id="@+id/btn1"
+                    style="@style/AppTheme.PrimarySmallButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/tab_title_1"
+                    android:enabled="false"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/btn2Ripple"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:mrl_rippleColor="@color/color2"
+                app:mrl_rippleOverlay="true"
+                app:mrl_rippleRoundedCorners="16dp">
+
+                <Button
+                    android:id="@+id/btn2"
+
+                    style="@style/AppTheme.PrimarySmallButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="@{()->activity.click2()}"
+                    android:text="@string/tab_title_2"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/btn3Ripple"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:mrl_rippleColor="@color/color2"
+                app:mrl_rippleOverlay="true"
+                app:mrl_rippleRoundedCorners="16dp">
+
+                <Button
+                    android:id="@+id/btn3"
+                    style="@style/AppTheme.PrimarySmallButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="@{()->activity.click3()}"
+                    android:text="@string/tab_title_3"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

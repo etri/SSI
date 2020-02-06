@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">SSI</string>
+    <string name="title1">분산형 자기주권\n신원정보관리</string>
+    <string name="title">신원 정보 관리</string>
+    <string name="info_self">신원 정보</string>
+    <string name="error_creation_meta_id">오류가 발생하여 Meta ID가 생성되지 않았습니다.</string>
+    <string name="cancel">취소</string>
+    <string name="ok">확 인</string>
+    <string name="retry">재시도</string>
+    <string name="gendid">DID 생성</string>
+    <string name="finish">종료</string>
+    <string name="adduser">사용자 추가</string>
+    <string name="edituser">사용자 정보 수정</string>
+    <string name="genkey">Key 생성중...</string>
+    <string name="regaddress">주소 등록중...</string>
+    <string name="checkid">ID 등록확인...</string>
+    <string name="regchain">블록체인에 등록중...</string>
+    <string name="genmetaid">meta ID 생성중...</string>
+    <string name="savekey">키 저장중...</string>
+    <string name="complete">완 료</string>
+    <string name="setting">설 정</string>
+    <string name="name1">성 명 : </string>
+    <string name="idnumber1">주민등록번호 : </string>
+    <string name="address1">주소 : </string>
+    <string name="date1">발행일 : </string>
+    <string name="issuer1">발행기관 : </string>
+    <string name="editcomplete">수정완료</string>
+    <string name="position1">직급 : </string>
+    <string name="office1">소속 : </string>
+    <string name="regist_date1">입사일 : </string>
+    <string name="gendidcomplete">DID 생성 완료</string>
+    <string name="did">DID</string>
+    <string name="did1">DID : </string>
+    <string name="userlist">사용자 정보 관리</string>
+    <string name="select_chain">블록체인선택</string>리
+    <string name="select_did">DID 관리</string>
+    <string name="yes">예</string>
+    <string name="no">아니오</string>
+
+
+    <string name="mainmessage1">DID가 없습니다.\nDID를 생성해 주세요</string>
+
+    <string name="settingmessage1">신원 증명 목록</string>
+    <string name="settingmessage2">블록체인 선택</string>
+    <string name="settingmessage3">DID 생성</string>
+    <string name="settingmessage5">DID 관리</string>
+    <string name="settingmessage4">사용자 정보 관리</string>
+
+    <string name="userlist_currentuser">현재 사용자 : </string>
+
+
+    <string name="metadium">Metadium</string>
+    <string name="icon">Icon</string>
+    <string name="indy">Indy</string>
+
+    <string name="checkout_title">신원증명 발급</string>
+    <string name="checkout_message">행정안전부로 부터 \n신원증명을 받으시겠습니까?</string>
+    <string name="checkout_message1">생체 인증을 하여 승인합니다.</string>
+
+    <string name="requst_presentation_title1">재직증명 발급</string>
+    <string name="requst_presentation_title2">은행 계좌 개설</string>
+    <string name="requst_presentation_message1">행안부 신원증명을 제출 하시겠습니까?</string>
+    <string name="requst_presentation_message2">재직증명서를 제출 하시겠습니가?</string>
+
+    <string name="finish_id_credential">행정안전부로 부터\n신원증명이 발행되었습니다.</string>
+    <string name="finish_office_credential">ETRI로 부터 \n재직증명이 발행되었습니다.</string>
+    <string name="id_credential">신원증명서</string>
+    <string name="id_credential1">행정안전부 신원증명</string>
+    <string name="office_credential">재직증명서</string>
+    <string name="office_credential1">ETRI 재직증명</string>
+    <string name="request_account">계좌 개설 요청</string>
+    <string name="credential_list">신원증명 목록</string>
+
+    <string name="no_id_credential">신원 증명 정보가 없습니다. \n종료합니다.</string>
+    <string name="no_office_credential">재직 증명 정보가 없습니다. \n종료합니다.</string>
+    <string name="dialog_title">알림 </string>
+    <string name="dialog_no_user">사용자 정보가 없습니다.</string>
+    <string name="dialog_verify_error">인증 실패</string>
+    <string name="dialog_error">error. </string>
+
+    <string name="biometric_no_hw">하드웨어가 지원하지 않습니다.</string>
+
+    <string name="biometric_no_bio">지문설정이 되어 있지 않습니다.</string>
+
+
+    <string name="asset_testpage" translatable="false">file:///android_asset/testpage.html</string>
+
+    <string name="finish_add_user">추가 완료</string>
+    <string name="finish_edit_user">수정 완료</string>
+
+    <string name="tab_title_0">신원증명 발행 요청</string>
+    <string name="tab_title_1">신원증명\n발행 요청</string>
+    <string name="tab_title_2">신원 증명 목록</string>
+    <string name="tab_title_3">설정</string>
+
+    <string name="tab_title_4">행정안전부</string>
+    <string name="tab_title_5">ETRI</string>
+
+    <string name="main_title">모바일 신원정보관리</string>
+    <string name="request_title">신원증명 발행 요청</string>
+    <string name="no_credential">발행된 신원증명이 없습니다.</string>
+
+    <string name="dialog_no_data">데이터가 올바르지 않습니다.</string>
+    <string name="delete">삭제</string>
+
+</resources>

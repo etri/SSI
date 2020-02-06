@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="activity"
+            type="com.iitp.iitp_demo.activity.EditUserActivity" />
+    </data>
+
+
+    <RelativeLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/layout_appbar" />
+
+        <ScrollView
+            android:layout_below="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="500dp">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/nameTv"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/name1"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/nameEdit"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="68dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/idnumberTv"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/idnumber1"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/idnumberEdit1"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:inputType="number"
+                        android:maxLength="6" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="-"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/idnumberEdit2"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:inputType="number"
+                        android:maxLength="7" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="20dp">
+
+
+                    <TextView
+                        android:id="@+id/addressTv"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/address1"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/addressEdit"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="50dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:weightSum="2"
+            android:layout_marginBottom="16dp"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            >
+
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/btn11Ripple"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:mrl_rippleColor="@color/color2"
+                app:mrl_rippleOverlay="true"
+                app:mrl_rippleRoundedCorners="16dp">
+
+                <Button
+                    android:id="@+id/btn11"
+                    style="@style/AppTheme.PrimarySmallButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="@{()->activity.saveData()}"
+                    android:text="@string/finish_edit_user"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/btn22Ripple"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:mrl_rippleColor="@color/color2"
+                app:mrl_rippleOverlay="true"
+                app:mrl_rippleRoundedCorners="16dp">
+
+                <Button
+                    android:id="@+id/btn22"
+                    style="@style/AppTheme.PrimarySmallButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="@{()->activity.deleteData()}"
+                    android:text="@string/delete"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+
+        </LinearLayout>
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            android:id="@+id/yesRipple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:mrl_rippleColor="@color/color2"
+            app:mrl_rippleOverlay="true"
+            app:mrl_rippleRoundedCorners="16dp">
+
+            <Button
+                android:id="@+id/saveBtn"
+                style="@style/AppTheme.PrimarySmallButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="@{()->activity.saveData()}"
+                android:text="@string/editcomplete"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </com.balysv.materialripple.MaterialRippleLayout>
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:weightSum="3"
+            android:visibility="gone"
+            android:gravity="bottom">
+
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/btn1Ripple"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:mrl_rippleColor="@color/color2"
+                app:mrl_rippleOverlay="true"
+                app:mrl_rippleRoundedCorners="16dp">
+
+                <Button
+                    android:id="@+id/btn1"
+                    style="@style/AppTheme.PrimarySmallButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="@{()->activity.click1()}"
+                    android:text="@string/tab_title_1"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/btn2Ripple"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:mrl_rippleColor="@color/color2"
+                app:mrl_rippleOverlay="true"
+                app:mrl_rippleRoundedCorners="16dp">
+
+                <Button
+                    android:id="@+id/btn2"
+
+                    style="@style/AppTheme.PrimarySmallButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="@{()->activity.click2()}"
+                    android:text="@string/tab_title_2"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/btn3Ripple"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:mrl_rippleColor="@color/color2"
+                app:mrl_rippleOverlay="true"
+                app:mrl_rippleRoundedCorners="16dp">
+
+                <Button
+                    android:id="@+id/btn3"
+                    style="@style/AppTheme.PrimarySmallButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="@{()->activity.click3()}"
+                    android:text="@string/tab_title_3"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.iitp.iitp_demo">
+
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".IITPApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher_foreground_ssi"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MainActivity2"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.UserListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.FinishGenerateDidActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EditUserActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SelectChainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SelectDidActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FinishGenerateIdCredentialActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FinishGenerateOfficeCredentialActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TestPageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RequestPageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CheckOutCredentialActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="checkoutcredential"
+                    android:scheme="ssi" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.RequestPresentationActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="requestpresentation"
+                    android:scheme="ssi" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

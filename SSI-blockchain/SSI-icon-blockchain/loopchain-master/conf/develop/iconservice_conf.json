@@ -1,0 +1,30 @@
+{
+  "log": {
+    "logger": "iconservice",
+    "colorLog": true,
+    "level": "warning",
+    "outputType": "console|file",
+    "rotate": {
+      "type": "period|bytes",
+      "period": "daily",
+      "interval": 1,
+      "backupCount": 10,
+      "maxBytes": 50000000
+    }
+  },
+  "builtinScoreOwner": "hx5a05b58a25a1e5ea0f1d5715e1f655dffc1fb30a",
+  "service": {
+    "fee": true,
+    "audit": false,
+    "deployerWhiteList": false,
+    "scorePackageValidator": false
+  },
+  "mainPRepCount": 4,
+  "mainAndSubPRepCount": 8,
+  "decentralizeTrigger": 0,
+  "iissCalculatePeriod": 30,
+  "termPeriod": 30,
+  "penaltyGracePeriod": 30,
+  "blockValidationPenaltyThreshold": 10,
+  "lowProductivityPenaltyThreshold": 0
+}

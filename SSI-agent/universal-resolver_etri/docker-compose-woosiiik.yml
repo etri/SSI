@@ -1,0 +1,14 @@
+version: "2"
+services:
+  driver-did-icon:
+    image: woosiiik/driver-did-icon:latest
+    environment:
+      uniresolver_driver_did_icon_node_url: ${uniresolver_driver_did_icon_node_url}
+      uniresolver_driver_did_icon_score_addr: ${uniresolver_driver_did_icon_score_addr}
+      uniresolver_driver_did_icon_network_id: ${uniresolver_driver_did_icon_network_id}
+    ports:
+      - "8091:8080"
+  uni-resolver-web:
+    image: woosiiik/uni-resolver-web:latest
+    ports:
+      - "9000:8080"
