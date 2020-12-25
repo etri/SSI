@@ -5,7 +5,7 @@ This is Project for developement of decentralized self-sovereign identity manage
 - SSI-agent: Driver to resolve DIDs
 - SSI-blockchain: Blockchain storage for DIDs. The blockchain storages are developed using loopchain and metadium.
 
-Check the directories in this repository if you want to see the details.
+Please refer the directories in this repository if you want to see more details.
 
 
 ## How to run
