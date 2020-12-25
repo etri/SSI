@@ -14,4 +14,4 @@ Please refer [AUTHORS.md](AUTHORS.md).
 Please refer License.md in each directory.
 
 ### Acknowledgement
-This work was supported by the Institute for Information & communications Technology Promotion(IITP) grant funded by the Korea government(MSIT) (No. 20HS3710, Development of Decentralized Self Sovereign Identity Management Technology using Blockchain)
+This work was supported by the Institute for Information & communications Technology Promotion(IITP) grant funded by the Korea government(MSIT) (Development of Decentralized Self Sovereign Identity Management Technology using Blockchain)
