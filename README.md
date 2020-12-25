@@ -1,5 +1,5 @@
 ## Overview
-_SSI Project_ is a research project funded by national government (Full name of the project is "Development of Distributed Self Sovereign Identity Management Technology using Blockchain). The SSI Project aims to develop a identity management system that enables people to manage their identity by themselves. This project is developed by ETRI, Coinplug, Iconloop, BD, POSA, KFTC, and Koscom, and is composed of three components listed below The project was started in April 2019 and finished in December 2020.
+_SSI Project_ is a research project funded by national government (Full name of the project is "Development of Distributed Self Sovereign Identity Management Technology using Blockchain). The SSI Project aims to develop a identity management system that enables people to manage their identity by themselves. This project is developed by ETRI, Coinplug, Iconloop, BD, POSA, KFTC, and Koscom, and is composed of three components: SSI-app, SSI-agent, SSI-blockchain. The project was started in April 2019 and finished in December 2020.
 
 Each _SSI_1st_year_ and _SSI_2nd_year_ directory works with follow scenarios:
 * **SSI_1st_year**
