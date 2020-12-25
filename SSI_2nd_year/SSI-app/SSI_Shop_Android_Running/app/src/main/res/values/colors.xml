@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#2196F3</color>
+
+    <color name="market_color_primary">#2196F3</color>
+    <color name="market_color_red">#DB3022</color>
+    <color name="market_color_bg_gray">#F9F9F9</color>
+    <color name="market_color_text_gray">#9B9B9B</color>
+    <color name="market_color_white">#FFFFFF</color>
+    <color name="market_color_black">#000000</color>
+</resources>

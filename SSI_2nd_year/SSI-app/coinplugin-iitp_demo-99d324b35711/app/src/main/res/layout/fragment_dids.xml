@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout2"
+    tools:context=".activity.fragment.DidsFragment">
+
+    <LinearLayout
+        android:background="@color/backgroundColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:background="@drawable/search_rect"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:queryHint="@string/dids_tab_serch_hint" />
+
+        <ScrollView
+            android:fillViewport="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/favoriteLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="20sp">
+
+                    <TextView
+                        android:id="@+id/favoriteTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="기본 DID"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText" />
+
+                    <View
+                        android:id="@+id/underLine1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/favoriteTitle"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/thinLineColor" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:visibility="invisible"
+                    android:id="@+id/favoriteItemLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp">
+
+                    <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_did_list_item"
+                        tools:ignore="ContentDescription" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@+id/image"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/nickname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            tools:text="행안부 ID" />
+
+                        <TextView
+                            android:id="@+id/blockChain"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/tabTextUnselect"
+                            android:textSize="12sp"
+                            tools:text="metadium" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/useBtn"
+                        style="@style/AppTheme.PrimaryButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/dids_tab_setting"
+                        tools:ignore="RelativeOverlap" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/idListLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="20sp">
+
+                    <TextView
+                        android:id="@+id/idListTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dids_tab_idlist"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:id="@+id/underLine2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/idListTitle"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/thinLineColor" />
+                </RelativeLayout>
+
+                <ListView
+                    android:id="@+id/didList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/thinLineColor"
+                    android:dividerHeight="1dp"
+                    android:scrollbars="none"
+                    tools:listitem="@layout/list_item_did"
+                    tools:ignore="NestedScrolling" />
+            </LinearLayout>
+
+
+        </ScrollView>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundColor"
+        android:fillViewport="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/layout_appbar_new"
+            android:paddingStart="-20dp"
+            android:paddingEnd="-20dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+
+
+            <TextView
+                android:id="@+id/pin_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                android:text="@string/did_pincode_desc1"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="120dp"
+                android:text="@string/did_pincode_desc2"
+                android:textColor="#9b9b9b"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:id="@+id/inputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="184dp">
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/did_pincode_desc3"
+                    android:textColor="#9b9b9b"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="49dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="50dp"
+                    android:layout_toEndOf="@+id/text1">
+
+                    <ImageView
+                        android:id="@+id/img1"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ic_password_round_inactive"
+                        tools:ignore="ContentDescription" />
+
+                    <ImageView
+                        android:id="@+id/img2"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/img1"
+                        android:background="@drawable/ic_password_round_inactive"
+                        tools:ignore="ContentDescription"/>
+
+                    <ImageView
+                        android:id="@+id/img3"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/img2"
+                        android:background="@drawable/ic_password_round_inactive"
+                        tools:ignore="ContentDescription"/>
+
+                    <ImageView
+                        android:id="@+id/img4"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/img3"
+                        android:background="@drawable/ic_password_round_inactive"
+                        tools:ignore="ContentDescription"/>
+
+                    <ImageView
+                        android:id="@+id/img5"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/img4"
+                        android:background="@drawable/ic_password_round_inactive"
+                        tools:ignore="ContentDescription"/>
+
+                    <ImageView
+                        android:id="@+id/img6"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/img5"
+                        android:background="@drawable/ic_password_round_inactive"
+                        tools:ignore="ContentDescription"/>
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/thinLineColor" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:visibility="invisible"
+                android:id="@+id/checkLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/inputLayout"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/text1_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/did_pincode_desc4"
+                    android:textColor="#9b9b9b"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="49dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="50dp"
+                    android:layout_toEndOf="@+id/text1_1">
+
+                    <ImageView
+                        android:id="@+id/img1_1"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ic_password_round_inactive"
+                        tools:ignore="ContentDescription"/>
+
+                    <ImageView
+                        android:id="@+id/img2_1"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/img1_1"
+                        android:background="@drawable/ic_password_round_inactive"
+                        tools:ignore="ContentDescription"/>
+
+                    <ImageView
+                        android:id="@+id/img3_1"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/img2_1"
+                        android:background="@drawable/ic_password_round_inactive"
+                        tools:ignore="ContentDescription"/>
+
+                    <ImageView
+                        android:id="@+id/img4_1"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/img3_1"
+                        android:background="@drawable/ic_password_round_inactive"
+                        tools:ignore="ContentDescription"/>
+
+                    <ImageView
+                        android:id="@+id/img5_1"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/img4_1"
+                        android:background="@drawable/ic_password_round_inactive"
+                        tools:ignore="ContentDescription"/>
+
+                    <ImageView
+                        android:id="@+id/img6_1"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/img5_1"
+                        android:background="@drawable/ic_password_round_inactive"
+                        tools:ignore="ContentDescription"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/thinLineColor" />
+            </RelativeLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+                <TextView
+                    android:id="@+id/key1"
+                    android:layout_width="120dp"
+                    android:layout_height="56dp"
+                    android:gravity="center"
+                    android:text="@string/did_pincode_keypad_1"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toStartOf="@+id/key2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/key2"
+                    android:layout_width="120dp"
+                    android:layout_height="56dp"
+                    android:gravity="center"
+                    android:text="@string/did_pincode_keypad_2"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toStartOf="@+id/key3"
+                    app:layout_constraintStart_toEndOf="@+id/key1"
+                    app:layout_constraintTop_toTopOf="@+id/key1" />
+
+                <TextView
+                    android:id="@+id/key3"
+                    android:layout_width="120dp"
+                    android:layout_height="56dp"
+                    android:gravity="center"
+                    android:text="@string/did_pincode_keypad_3"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.515"
+                    app:layout_constraintStart_toEndOf="@+id/key2"
+                    app:layout_constraintTop_toTopOf="@+id/key1" />
+
+                <TextView
+                    android:id="@+id/key4"
+                    android:layout_width="120dp"
+                    android:layout_height="56dp"
+                    android:gravity="center"
+                    android:text="@string/did_pincode_keypad_4"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toStartOf="@+id/key5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/key1" />
+
+                <TextView
+                    android:id="@+id/key5"
+                    android:layout_width="120dp"
+                    android:layout_height="56dp"
+                    android:gravity="center"
+                    android:text="@string/did_pincode_keypad_5"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toStartOf="@+id/key6"
+                    app:layout_constraintStart_toEndOf="@+id/key4"
+                    app:layout_constraintTop_toTopOf="@+id/key4" />
+
+                <TextView
+                    android:id="@+id/key6"
+                    android:layout_width="120dp"
+                    android:layout_height="56dp"
+                    android:gravity="center"
+                    android:text="@string/did_pincode_keypad_6"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/key5"
+                    app:layout_constraintTop_toTopOf="@+id/key4" />
+
+                <TextView
+                    android:id="@+id/key7"
+                    android:layout_width="120dp"
+                    android:layout_height="56dp"
+                    android:gravity="center"
+                    android:text="@string/did_pincode_keypad_7"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toStartOf="@+id/key8"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/key4" />
+
+                <TextView
+                    android:id="@+id/key8"
+                    android:layout_width="120dp"
+                    android:layout_height="56dp"
+                    android:gravity="center"
+                    android:text="@string/did_pincode_keypad_8"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toStartOf="@+id/key9"
+                    app:layout_constraintStart_toEndOf="@+id/key7"
+                    app:layout_constraintTop_toTopOf="@+id/key7" />
+
+                <TextView
+                    android:id="@+id/key9"
+                    android:layout_width="120dp"
+                    android:layout_height="56dp"
+                    android:gravity="center"
+                    android:text="@string/did_pincode_keypad_9"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/key8"
+                    app:layout_constraintTop_toTopOf="@+id/key7" />
+
+                <TextView
+                    android:id="@+id/key10"
+                    android:layout_width="120dp"
+                    android:layout_height="56dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toStartOf="@+id/key11"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/key7" />
+
+                <TextView
+                    android:id="@+id/key11"
+                    android:layout_width="120dp"
+                    android:layout_height="56dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toStartOf="@+id/key12"
+                    app:layout_constraintStart_toEndOf="@+id/key10"
+                    app:layout_constraintTop_toTopOf="@+id/key10" />
+
+                <TextView
+                    android:id="@+id/key12"
+                    android:layout_width="120dp"
+                    android:layout_height="56dp"
+                    android:gravity="center"
+                    android:text="@string/did_pincode_keypad_del"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/key11"
+                    app:layout_constraintTop_toTopOf="@+id/key10">
+
+                </TextView>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</layout>

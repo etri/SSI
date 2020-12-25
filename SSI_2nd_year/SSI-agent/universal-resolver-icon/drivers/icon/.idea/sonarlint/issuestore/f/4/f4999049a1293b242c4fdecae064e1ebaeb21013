@@ -1,0 +1,19 @@
+
+V	java:S125"<This block of commented-out lines of code should be removed.(îÆ’µÿÿÿÿÿ
+H
+java:S1068""-Remove this unused "networkId" private field.( ø†©øÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(îÆ’µÿÿÿÿÿ
+H
+java:S1068!"-Remove this unused "scoreAddr" private field.(·£ì˜úÿÿÿÿ
+M
+java:S26291"7Use the built-in formatting to construct this argument.(’Èôú
+X
+java:S1117+"=Rename "networkId" which hides the field declared at line 34.(é•î­ûÿÿÿÿ
+W
+java:S34571"AFormat specifiers should be used instead of string concatenation.(’Èôú
+V	java:S125"<This block of commented-out lines of code should be removed.(­Ù•—ıÿÿÿÿ
+A
+java:S1068#"+Remove this unused "nodeUrl" private field.( õªÍ
+u
+java:S2139:"XEither log this exception and handle it, or rethrow it with some contextual information.(ï­£Ä8—´²¤è.
+]	java:S125>"<This block of commented-out lines of code should be removed.(Ó‰©üÿÿÿÿ8Ø®¿¤è.

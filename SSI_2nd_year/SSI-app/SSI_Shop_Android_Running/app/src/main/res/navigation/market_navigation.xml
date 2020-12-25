@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/market_navigation"
+    app:startDestination="@id/nav_product_list">
+
+    <fragment
+        android:id="@+id/nav_product_list"
+        android:name="com.bd.ssishop.market.product.ProductListFragment"
+        android:label="@string/menu_product"
+        tools:layout="@layout/fragment_product_list">
+        <action
+            android:id="@+id/action_nav_product_list_to_nav_product_detail"
+            app:destination="@id/nav_product_detail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_product_detail"
+        android:name="com.bd.ssishop.market.product.ProductDetailFragment"
+        tools:layout="@layout/fragment_product_detail">
+        <action
+            android:id="@+id/action_nav_product_detail_to_nav_product_purchase"
+            app:destination="@id/nav_product_purchase" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_product_purchase"
+        android:name="com.bd.ssishop.market.product.ProductPurchaseFragment"
+        tools:layout="@layout/fragment_product_purchase">
+        <action
+            android:id="@+id/action_nav_product_purchase_to_nav_product_complete"
+            app:destination="@id/nav_product_complete"
+            app:popUpTo="@id/nav_product_list" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_product_complete"
+        android:name="com.bd.ssishop.market.product.ProductCompleteFragment"
+        tools:layout="@layout/fragment_product_complete" >
+        <argument
+            android:name="dealId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_deal_list"
+        android:name="com.bd.ssishop.market.deal.DealListFragment"
+        android:label="@string/menu_deal"
+        tools:layout="@layout/fragment_deal_list" >
+        <action
+            android:id="@+id/action_nav_deal_list_to_nav_deal_detail"
+            app:destination="@id/nav_deal_detail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_deal_detail"
+        android:name="com.bd.ssishop.market.deal.DealDetailFragment"
+        tools:layout="@layout/fragment_deal_detail" />
+
+    <fragment
+        android:id="@+id/nav_register"
+        android:name="com.bd.ssishop.market.register.RegisterFragment"
+        android:label="@string/menu_register"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_nav_product_detail_to_nav_product_purchase"
+            app:destination="@id/nav_register_complete"
+            app:popUpTo="@id/nav_product_list"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_register_complete"
+        android:name="com.bd.ssishop.market.register.RegisterCompleteFragment"
+        android:label="@string/fragment_register_complete"
+        tools:layout="@layout/fragment_register_complete" />
+
+    <fragment
+        android:id="@+id/nav_init"
+        android:name="com.bd.ssishop.api.DataInitFragment"
+        tools:layout="@layout/fragment_data_init" />
+
+    <fragment
+        android:id="@+id/nav_push_detail_deal"
+        android:name="com.bd.ssishop.api.DealDetailPushFragment"
+        tools:layout="@layout/fragment_data_init" >
+        <action
+            android:id="@+id/action_nav_push_detail_deal_to_nav_push_detail_deal_push"
+            app:destination="@id/nav_pushend_detail_deal" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_pushend_detail_deal"
+        android:name="com.bd.ssishop.market.deal.DealDetailPushEndFragment"
+        tools:layout="@layout/fragment_deal_detail_pushend"
+        />
+</navigation>

@@ -1,0 +1,86 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/etri2</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:statusBarColor">#000000</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="colorControlNormal">@color/tabTextUnselect</item>
+        <item name="colorControlActivated">@color/tabTextUnselect</item>
+        <item name="android:textCursorDrawable">@color/tabTextUnselect</item>
+        <item name="autoCompleteTextViewStyle">@style/SearchAutoCompleteTextView</item>
+    </style>
+    <!--  -->
+<!-- <item name="colorControlNormal">@color/white</item> -->
+    <style name="AppTheme.Splash" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="colorPrimary">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.PrimaryButton" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@drawable/red_round_edge_rect</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:height">36sp</item>
+    </style>
+    <style name="AppTheme.PrimaryButton2" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@drawable/blue_round_edge_rect</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:height">36sp</item>
+    </style>
+    <style name="AppTheme.OutlineButton" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@drawable/selector_outline_btn</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:height">36sp</item>
+    </style>
+
+    <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <!-- Gets rid of the search icon -->
+        <!-- Gets rid of the "underline" in the text -->
+        <item name="queryBackground">@drawable/search_rect</item>
+        <item name="background">@drawable/search_rect</item>
+        <!-- Gets rid of the search icon when the SearchView is expanded -->
+        <item name="searchHintIcon">@null</item>
+        <!-- The hint text that appears when the user has not typed anything -->
+
+    </style>
+
+    <style name="EditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="colorControlNormal">@color/tabTextUnselect</item>
+        <item name="colorControlActivated">@color/tabTextUnselect</item>
+        <item name="android:textCursorDrawable">@color/tabTextUnselect</item>
+        <item name="android:textColor">@color/tabTextUnselect</item>
+        <item name="android:textColorHint">@color/tabTextUnselect</item>
+        <item name="android:textColorHighlight">@color/tabTextUnselect</item>
+    </style>
+
+    <style name="EditTextStyle2" parent="Widget.AppCompat.EditText">
+        <item name="colorControlNormal">@color/tabTextUnselect</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="android:textCursorDrawable">@color/tabTextUnselect</item>
+        <item name="android:textColor">@color/tabTextUnselect</item>
+        <item name="android:textColorHint">@color/tabTextUnselect</item>
+        <item name="android:textColorHighlight">@color/tabTextUnselect</item>
+    </style>
+
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColorPrimary">@color/backgroundColor</item>
+        <item name="colorAccent">@color/buttonBackgroundColor1</item>
+    </style>
+
+    <style name="SearchAutoCompleteTextView" parent="Widget.AppCompat.Light.AutoCompleteTextView">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textColorHint">@color/tabTextUnselect</item>
+    </style>
+</resources>

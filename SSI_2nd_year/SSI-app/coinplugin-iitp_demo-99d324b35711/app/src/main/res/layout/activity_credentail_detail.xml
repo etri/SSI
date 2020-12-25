@@ -1,0 +1,838 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout2"
+    tools:context=".activity.MainActivity">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="activity"
+            type="com.iitp.iitp_demo.activity.MainActivity" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundColor"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/ic_action_arrow_left"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    tools:background="@drawable/ic_list_item_govern"
+                    tools:ignore="ContentDescription" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/appbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:textColor="@android:color/white"
+                    android:textSize="22sp"
+                    app:autoSizeMaxTextSize="20sp"
+                    app:autoSizeTextType="uniform"
+                    tools:text="DIDs" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/vcName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                tools:text="신분증 VC" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vcName"
+                android:layout_marginTop="20dp"
+                android:text="@string/claimIssuer"
+                android:textColor="@color/thinLineColor"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text1"
+                android:layout_marginTop="20dp"
+                android:text="@string/issuerDID"
+                android:textColor="@color/thinLineColor"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text2"
+                android:layout_marginTop="20dp"
+                android:text="@string/userDID"
+                android:textColor="@color/thinLineColor"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/issuerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vcName"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                tools:text="행정안전부" />
+
+            <TextView
+                android:id="@+id/issuerDID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/issuerName"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/text2"
+                android:ellipsize="middle"
+                android:gravity="end"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/userDID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/issuerDID"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/text2"
+                android:ellipsize="middle"
+                android:gravity="end"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/dataName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text3"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/thinLineColor"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/dataData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text3"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_toEndOf="@+id/dataName"
+                android:gravity="end"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:id="@+id/idCredentialLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dataName"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/idName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/claimName"
+                    android:textColor="@color/thinLineColor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/idNameTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@id/idBirth"
+                    android:gravity="end"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    tools:text="행정안전부" />
+
+                <TextView
+                    android:id="@+id/idBirth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/idName"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/claimBirth"
+                    android:textColor="@color/thinLineColor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/idBirthTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/idNameTv"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@id/idBirth"
+                    android:gravity="end"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    tools:text="생년월일" />
+
+                <TextView
+                    android:id="@+id/idAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/idBirth"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/claimAddress"
+                    android:textColor="@color/thinLineColor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/idAddressTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/idBirthTv"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@id/idBirth"
+                    android:gravity="end"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    tools:text="주소" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/loginLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dataName"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/loginName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/claimName"
+                    android:textColor="@color/thinLineColor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/loginNameTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@id/loginBirth"
+                    android:gravity="end"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    tools:text="행정안전부" />
+
+                <TextView
+                    android:id="@+id/loginBirth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/loginName"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/claimBirth"
+                    android:textColor="@color/thinLineColor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/loginBirthTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/loginNameTv"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@id/loginBirth"
+                    android:gravity="end"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    tools:text="생년월일" />
+
+                <TextView
+                    android:id="@+id/loginAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/loginBirth"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/claimAddress"
+                    android:textColor="@color/thinLineColor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/loginAddressTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/loginBirthTv"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@id/loginBirth"
+                    android:gravity="end"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    tools:text="주소" />
+
+                <TextView
+                    android:id="@+id/loginMobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/loginAddress"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/claimPhone"
+                    android:textColor="@color/thinLineColor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/loginMobileTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/loginAddressTv"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@id/loginAddress"
+                    android:gravity="end"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    tools:text="전화번호" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/postCredentialLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dataName"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/postName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/claimName"
+                    android:textColor="@color/thinLineColor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/postNameTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@id/postAddress"
+                    android:gravity="end"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    tools:text="행정안전부" />
+
+                <TextView
+                    android:id="@+id/postAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/postName"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/claimAddress"
+                    android:textColor="@color/thinLineColor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/postAddressTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/postNameTv"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@id/postAddress"
+                    android:gravity="end"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    tools:text="주소" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/cardCredentialLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dataName"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/cardToken"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/claimToken"
+                    android:textColor="@color/thinLineColor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/cardTokenTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@id/cardToken"
+                    android:gravity="end"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    tools:text="카드토큰" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/stockCredentialLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dataName"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/stockId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/claimId"
+                    android:textColor="@color/thinLineColor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/stockIdTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@id/stockId"
+                    android:gravity="end"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    tools:text="didid" />
+
+                <TextView
+                    android:id="@+id/stockName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/stockId"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/claimName"
+                    android:textColor="@color/thinLineColor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/stockNameTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/stockIdTv"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@id/stockId"
+                    android:gravity="end"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    tools:text="@string/claimName" />
+
+                <TextView
+                    android:id="@+id/stockAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/stockName"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/claimAddress"
+                    android:textColor="@color/thinLineColor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/stockAddressTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/stockNameTv"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@id/stockId"
+                    android:gravity="end"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    tools:text="주소" />
+
+                <TextView
+                    android:id="@+id/stockStartDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/stockAddress"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/claimStartDate"
+                    android:textColor="@color/thinLineColor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/stockStartDateTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/stockAddressTv"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@id/stockId"
+                    android:gravity="end"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    tools:text="시작일" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/productCredentialLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dataName"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/productName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/claimProductName"
+                    android:textColor="@color/thinLineColor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/productNameTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@id/sn"
+                    android:gravity="end"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    tools:text="didid" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/productName"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/claimMakeDate"
+                    android:textColor="@color/thinLineColor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/dateTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/productNameTv"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@id/sn"
+                    android:gravity="end"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    tools:text="이름" />
+
+                <TextView
+                    android:id="@+id/sn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/date"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/claimSn"
+                    android:textColor="@color/thinLineColor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/snTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dateTv"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@id/sn"
+                    android:gravity="end"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    tools:text="주소" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/productProofCredentialLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dataName"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/productDID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/claimProductDID"
+                    android:textColor="@color/thinLineColor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/productDIDTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@id/productDID"
+                    android:ellipsize="middle"
+                    android:gravity="end"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    tools:text="didid" />
+
+                <TextView
+                    android:id="@+id/sellerDID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/productDID"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/claimSellerDID"
+                    android:textColor="@color/thinLineColor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/sellerDIDTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/productDIDTv"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@id/productDID"
+                    android:ellipsize="middle"
+                    android:gravity="end"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    tools:text="이름" />
+
+                <TextView
+                    android:id="@+id/buyerDID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sellerDID"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/claimBuyerDID"
+                    android:textColor="@color/thinLineColor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/buyerDIDTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sellerDIDTv"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@id/productDID"
+                    android:ellipsize="middle"
+                    android:gravity="end"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    tools:text="" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/buyerDID"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/claimPrice"
+                    android:textColor="@color/thinLineColor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/priceTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/buyerDIDTv"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@id/productDID"
+                    android:ellipsize="middle"
+                    android:gravity="end"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    tools:text="주소" />
+
+                <TextView
+                    android:id="@+id/sellDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/price"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/claimSellDate"
+                    android:textColor="@color/thinLineColor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/sellDateTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/priceTv"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@id/productDID"
+                    android:ellipsize="middle"
+                    android:gravity="end"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    tools:text="주소" />
+
+                <TextView
+                    android:id="@+id/blocknumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sellDate"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/claimBlockNumber"
+                    android:textColor="@color/thinLineColor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/blocknumberTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sellDateTv"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@id/productDID"
+                    android:gravity="end"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    tools:text="주소" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/phoneCredentialLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dataName"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/phoneName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/claimName"
+                    android:textColor="@color/thinLineColor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/phoneNameTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@id/phone"
+                    android:ellipsize="middle"
+                    android:gravity="end"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    tools:text="didid" />
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/phoneName"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/claimPhone"
+                    android:textColor="@color/thinLineColor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/phoneTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/phoneNameTv"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@id/phone"
+                    android:ellipsize="middle"
+                    android:gravity="end"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    tools:text="이름" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</layout>

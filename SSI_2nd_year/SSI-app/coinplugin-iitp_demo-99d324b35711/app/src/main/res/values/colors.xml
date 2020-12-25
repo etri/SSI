@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="titleTextColor">#3e475b</color>
+
+
+    <color name="color1">#123456</color>
+    <color name="color2">#28819f</color>
+    <color name="color3">#3eb5c1</color>
+    <color name="color4">#abede0</color>
+    <color name="color5">#d6eee4</color>
+
+    <color name="systemTextColor">#bec5d7</color>
+    <color name="cardBgColor">#f7f9fe</color>
+    <color name="primaryTextColor">#3e475b</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blackText">#000000</color>
+    <color name="blackAlpahText">#99000000</color>
+
+    <color name="backcolor">#eeeeee</color>
+
+    <color name="etri1">#0066a5</color>
+    <color name="etri2">#f15a22</color>
+    <color name="etri2_1">#30f15a22</color>
+    <color name="lineColor">@color/thinLineColor</color>
+    <color name="toast_text">@android:color/white</color>
+
+
+    <!-- new -->
+
+    <color name="thinLineColor">#9B9B9B</color>
+    <color name="backgroundColor">#1E1F28</color>
+    <color name="tabTextSelect">#db3022</color>
+    <color name="tabTextUnselect">#9b9b9b</color>
+
+    <color name="buttonBackgroundColor1">#DB3022</color>
+    <color name="buttonBackgroundColor2">#2196F3</color>
+</resources>

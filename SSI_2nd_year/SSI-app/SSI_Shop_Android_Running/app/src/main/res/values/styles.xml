@@ -1,0 +1,85 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:textViewStyle">@style/robotoTextView</item>
+        <item name="buttonStyle">@style/robotoButton</item>
+        <item name="editTextStyle">@style/robotoEditText</item>
+        <item name="radioButtonStyle">@style/robotoRadioButton</item>
+        <item name="checkboxStyle">@style/robotoCheckBox</item>
+    </style>
+
+    <style name="Theme.NoPreviewWindow" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="TEXT_H">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="TEXT_DEFAULT">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+
+    <style name="TEXT_PRIMARY">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/market_color_primary</item>
+    </style>
+
+    <style name="TEXT_PRIMARY_TITLE">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/market_color_primary</item>
+    </style>
+
+    <style name="TEXT_DEFAULT_GRAY">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/market_color_text_gray</item>
+    </style>
+
+    <style name="TAB_NORMAL_GRAY">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/market_color_text_gray</item>
+    </style>
+
+    <style name="TEXT_H1" parent="TEXT_H">
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="TEXT_H2" parent="TEXT_H">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TEXT_H3" parent="TEXT_H">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TEXT_BUTTON" >
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+
+
+
+</resources>

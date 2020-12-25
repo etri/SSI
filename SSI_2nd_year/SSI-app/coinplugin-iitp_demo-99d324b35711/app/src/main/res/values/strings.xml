@@ -1,0 +1,322 @@
+<resources>
+    <string name="app_name">SSI</string>
+    <string name="title1">분산형 자기주권\n신원정보관리</string>
+    <string name="title">신원 정보 관리</string>
+    <string name="info_self">신원 정보</string>
+    <string name="error_creation_meta_id">오류가 발생하여 Meta DID가 생성되지 않았습니다.</string>
+    <string name="cancel">취소</string>
+    <string name="ok">확 인</string>
+    <string name="retry">재시도</string>
+    <string name="gendid">DID 생성</string>
+    <string name="finish">종료</string>
+    <string name="adduser">사용자 추가</string>
+    <string name="edituser">사용자 정보 수정</string>
+    <string name="genkey">Key 생성중...</string>
+    <string name="regaddress">주소 등록중...</string>
+    <string name="checkid">ID 등록확인...</string>
+    <string name="regchain">블록체인에 등록중...</string>
+    <string name="genmetaid">meta DID 생성중...</string>
+    <string name="savekey">키 저장중...</string>
+    <string name="complete">완 료</string>
+    <string name="setting">설 정</string>
+    <string name="name1">성 명 : </string>
+    <string name="idnumber1">주민등록번호 : </string>
+    <string name="address1">주소 : </string>
+    <string name="date1">발행일 : </string>
+    <string name="issuer1">발행기관 : </string>
+    <string name="editcomplete">수정완료</string>
+    <string name="position1">직급 : </string>
+    <string name="office1">소속 : </string>
+    <string name="regist_date1">입사일 : </string>
+    <string name="did_create_complate">DID 생성이 완료되었습니다.</string>
+    <string name="did">DID</string>
+    <string name="did1">DID : </string>
+    <string name="userlist">사용자 정보 관리</string>
+    <string name="select_chain">블록체인선택</string>리
+    <string name="select_did">DID 관리</string>
+    <string name="yes">예</string>
+    <string name="no">아니오</string>
+
+
+    <string name="mainmessage1">DID가 없습니다.\nDID를 생성해 주세요</string>
+
+    <string name="settingmessage1">신원 증명 목록</string>
+    <string name="settingmessage2">블록체인 선택</string>
+    <string name="settingmessage3">DID 생성</string>
+    <string name="settingmessage5">DID 관리</string>
+    <string name="settingmessage4">사용자 정보 관리</string>
+
+    <string name="userlist_currentuser">현재 사용자 : </string>
+
+
+    <string name="metadium">Metadium</string>
+    <string name="icon">Icon</string>
+    <string name="indy">Indy</string>
+
+    <string name="checkout_title">신원증명 발급</string>
+    <string name="checkout_message">행정안전부로 부터 \n신원증명을 받으시겠습니까?</string>
+    <string name="checkout_message1">생체 인증을 하여 승인합니다.</string>
+
+    <string name="requst_presentation_title1">재직증명 발급</string>
+    <string name="requst_presentation_title2">은행 계좌 개설</string>
+    <string name="requst_presentation_message1">행안부 신원증명을 제출 하시겠습니까?</string>
+    <string name="requst_presentation_message2">재직증명서를 제출 하시겠습니가?</string>
+
+    <string name="finish_id_credential">행정안전부로 부터\n신원증명이 발행되었습니다.</string>
+    <string name="finish_office_credential">ETRI로 부터 \n재직증명이 발행되었습니다.</string>
+    <string name="id_credential">신원증명서</string>
+    <string name="id_credential1">행정안전부 신원증명</string>
+    <string name="office_credential">재직증명서</string>
+    <string name="office_credential1">ETRI 재직증명</string>
+    <string name="request_account">계좌 개설 요청</string>
+    <string name="credential_list">신원증명 목록</string>
+
+    <string name="no_id_credential">신원 증명 정보가 없습니다. \n종료합니다.</string>
+    <string name="no_office_credential">재직 증명 정보가 없습니다. \n종료합니다.</string>
+    <string name="dialog_title">알림 </string>
+    <string name="dialog_no_user">사용자 정보가 없습니다.</string>
+    <string name="dialog_verify_error">인증 실패</string>
+    <string name="dialog_error">error. </string>
+
+    <string name="biometric_no_hw">하드웨어가 지원하지 않습니다.</string>
+
+    <string name="biometric_no_bio">지문설정이 되어 있지 않습니다.</string>
+
+
+    <string name="asset_testpage" translatable="false">file:///android_asset/testpage.html</string>
+
+    <string name="finish_add_user">추가 완료</string>
+    <string name="finish_edit_user">수정 완료</string>
+
+    <string name="tab_title_0">신원증명 발행 요청</string>
+    <string name="tab_title_1">신원증명\n발행 요청</string>
+    <string name="tab_title_2">신원 증명 목록</string>
+    <string name="tab_title_3">설정</string>
+
+    <string name="tab_title_4">행정안전부</string>
+    <string name="tab_title_5">ETRI</string>
+
+    <string name="main_title">모바일 신원정보관리</string>
+    <string name="request_title">신원증명 발행 요청</string>
+    <string name="no_credential">발행된 신원증명이 없습니다.</string>
+
+    <string name="dialog_no_data">데이터가 올바르지 않습니다.</string>
+    <string name="delete">삭제</string>
+
+
+    <!-- new -->
+    <string name="tab_credential">Credentials</string>
+    <string name="tab_dids">DIDs</string>
+    <string name="tab_scan">Scan</string>
+    <string name="tab_setting">Setting</string>
+
+    <string name="splash_ttitle">Self Sovereign\nIdentity</string>
+
+    <string name="credential_tab_listItem1_desc1">행정안전부</string>
+    <string name="credential_tab_listItem1_desc2">신분증VC</string>
+    <string name="credential_tab_listItem2_desc1">카드사</string>
+    <string name="credential_tab_listItem2_desc2">한국카드VC</string>
+    <string name="credential_tab_listItem2_desc3">한국카드VC, 서울카드VC</string>
+    <string name="credential_tab_listItem3_desc1">우체국</string>
+    <string name="credential_tab_listItem3_desc2">주소지VC</string>
+    <string name="credential_tab_listItem4_desc1">대학 컨소시엄</string>
+    <string name="credential_tab_listItem4_desc2">졸업증명VC</string>
+
+    <string name="credential_tab_listItem5_desc1">신분증 위임장</string>
+    <string name="credential_tab_listItem5_desc2">위임장</string>
+    <string name="credential_tab_listItem6_desc1">고가품마켓</string>
+    <string name="credential_tab_listItem6_desc2">고가품거래VC</string>
+    <string name="credential_tab_listItem7_desc1">증권사</string>
+    <string name="credential_tab_listItem7_desc2">한국증권VC</string>
+    <string name="credential_tab_listItem8_desc1">통신사</string>
+    <string name="credential_tab_listItem8_desc2">한국통신VC</string>
+    <string name="credential_tab_listItem9_desc1">ETRI</string>
+    <string name="credential_tab_listItem9_desc2">사원증VC</string>
+
+    <string name="dids_tab_favorite">즐겨찾기</string>
+    <string name="dids_tab_setting">설정</string>
+    <string name="dids_tab_use">사용</string>
+    <string name="dids_tab_add">추가</string>
+    <string name="dids_tab_idlist">DID 목록</string>
+    <string name="dids_vclist">VC 목록</string>
+    <string name="dids_tab_serch_hint">검색</string>
+
+    <!-- new did -->
+    <string name="add_did_new_did">새 DID</string>
+    <string name="add_did_nick_title">DID 별칭</string>
+    <string name="add_did_nick_hint">별칭을 입력해 주세요</string>
+    <string name="add_did_blockchain">블록체인</string>
+    <string name="add_did_create">생성</string>
+    <string name="add_did_write_nick">DID 별칭을 입력하세요</string>
+    <string name="add_did_select_blockChain">블록체인을 선택해 주세요</string>
+
+    <!-- did manage-->
+    <string name="did_manage_title">DID 관리</string>
+    <string name="did_manage_change_nick">DID 별칭 변경</string>
+    <string name="did_manage_set_default_did">기본 DID 설정</string>
+    <string name="did_manage_detail">상세 정보</string>
+    <string name="did_manage_delete">삭제</string>
+    <string name="did_manage_set_default">%s DID를\n기본 DID로 설정하시겠습니까?</string>
+    <string name="did_manage_delete_did">%s DID를\n삭제하시겠습니까?</string>
+
+
+    <!-- did manage-->
+    <string name="did_change_title">DID 별칭</string>
+    <string name="did_change_change">변경</string>
+    <string name="change_did_nickname_confirm">별칭이 변경되었습니다.</string>
+
+    <!-- did detail-->
+    <string name="did_detail_title">DID 상세정보</string>
+    <string name="did_detail_publickey">공개키</string>
+    <string name="did_detail_did">DID</string>
+    <string name="did_detail_create_time">생성 시간</string>
+
+    <!-- did select-->
+    <string name="did_select_title">DID 선택</string>
+    <string name="did_select_finish">선택완료</string>
+    <string name="refuse">거절</string>
+    <string name="send">제출</string>
+    <!-- vc list-->
+    <string name="vc_list_title">VC 목록</string>
+
+    <string name="vc_request">VC 제출 요청</string>
+    <string name="vc_request_post">VC 제출 요청</string>
+    <!-- setting-->
+    <string name="did_setting_friends_list">친구목록</string>
+    <string name="did_setting_friends_list_1">등록된 친구 리스트 보기</string>
+    <string name="did_setting_backup">백업/복구</string>
+    <string name="did_setting_backup_1">키/VC 백업/복구</string>
+    <string name="did_setting_reset">초기화</string>
+    <string name="did_setting_reset_1">VC/DID 초기화</string>
+    <string name="did_setting_security">보안</string>
+    <string name="did_setting_security_1">PIN 설정/생체인증 ON/OFF</string>
+    <string name="did_setting_pre">사전발행</string>
+    <string name="did_setting_pre1">사전발행, 사전발행(ZKP)</string>
+    <string name="did_setting_fav">즐겨찾기</string>
+    <string name="did_setting_security_edit_pin">PIN 수정</string>
+    <string name="did_setting_security_edit_pin_desc">등록된 PIN 번호 수정</string>
+    <string name="did_setting_security_edit_bio">생체인증</string>
+    <string name="did_setting_security_edit_bio_desc">생체인증 모드 ON/OFF</string>
+    <!--fingerprint-->
+    <string name="did_fingerprint_title">지문인증</string>
+    <string name="did_fingerprint_desc">지문을 사용하여 인증 하세요.</string>
+    <string name="did_fingerprint_pin">PIN</string>
+    <string name="did_fingerprint_on">ON</string>
+    <string name="did_fingerprint_off">OFF</string>
+    <string name="did_fingerprint_bio_set_dialog">생체인증 설정이\n성공적으로 완료되었습니다.</string>
+    <string name="did_fingerprint_bio_set_not_work">생체인증을 사용할 수가 없습니다.\n 설정에서 생체인증을 설정해 주세요.</string>
+
+    <!--pincode-->
+    <string name="did_pincode_init_title">PIN 설정</string>
+    <string name="did_pincode_title">PIN 입력</string>
+    <string name="did_pincode_edit_title">PIN 수정</string>
+    <string name="did_pincode_desc1">비밀번호 입력</string>
+    <string name="did_pincode_desc2">결제비밀번호를 입력해주세요.</string>
+    <string name="did_pincode_desc3">결제 비밀번호 입력</string>
+    <string name="did_pincode_desc4">결제 비밀번호 확인</string>
+    <string name="did_pincode_desc5">비밀번호 재설정</string>
+    <string name="did_pincode_keypad_1">1</string>
+    <string name="did_pincode_keypad_2">2</string>
+    <string name="did_pincode_keypad_3">3</string>
+    <string name="did_pincode_keypad_4">4</string>
+    <string name="did_pincode_keypad_5">5</string>
+    <string name="did_pincode_keypad_6">6</string>
+    <string name="did_pincode_keypad_7">7</string>
+    <string name="did_pincode_keypad_8">8</string>
+    <string name="did_pincode_keypad_9">9</string>
+    <string name="did_pincode_keypad_del">Del</string>
+    <string name="did_pincode_save">저장</string>
+    <string name="did_pincode_dialog_text">PIN 설정이 성공적으로\n 완료되었습니다.</string>
+    <string name="did_pincode_no_matching">비밀번호가 일치하지 않습니다.</string>
+
+    <!-- vc detailo -->
+    <string name="vc_detail_deligater">위임하기</string>
+    <string name="vc_detail_detail">상세 정보</string>
+    <string name="vc_detail_delete">삭제</string>
+
+    <!-- 친구 목록-->
+    <string name="friends">친구</string>
+
+    <!-- 설정 -->
+    <string name="setting_reset">초기화 하시겠습니까?</string>
+    <string name="setting_friend_reset">친구목록을 초기화 하시겠습니까?</string>
+    <string name="setting_vc_delete_reset">VC를 삭제하시겠습니까?</string>
+    <string name="setting_prevc">사전발행</string>
+    <string name="setting_prevc_desc">VC 사전발행</string>
+    <string name="setting_prevc1">사전발행(ZKP)</string>
+    <string name="setting_prevc1_desc">ZKP VC 사전발행</string>
+    <string name="setting_prevc_dialog">사전발행이 완료되었습니다.</string>
+
+    <!--백업/복구-->
+    <string name="setting_backup_restore">백업/복구</string>
+    <string name="setting_backup">백업</string>
+    <string name="setting_backup_desc">키/VC 백업</string>
+    <string name="setting_restore">복구</string>
+    <string name="setting_restore_desc">키/VC 복구</string>
+
+    <string name="idcredentialVC">신분증VC</string>
+    <string name="cardVC1">한국카드VC</string>
+    <string name="cardVC2">서울카드VC</string>
+    <string name="addressVC">주소지VC</string>
+    <string name="delegatorIdVC">위임 신분증 VC</string>
+    <string name="delegatorVC">위임장 VC</string>
+
+    <string name="sendList">제출 목록</string>
+    <string name="selectOK">선  택</string>
+    <string name="issuerDID">발행인 DID</string>
+    <string name="userDID">사용자 DID</string>
+
+
+    <string name="claimName">이름</string>
+    <string name="claimAddress">주소</string>
+    <string name="claimBirth">생년월일</string>
+    <string name="claimPhone">전화번호</string>
+    <string name="claimToken">토큰</string>
+    <string name="claimId">사용자 ID</string>
+    <string name="claimStartDate">시작일자</string>
+    <string name="claimSn">일련번호</string>
+    <string name="claimProductDID">물품 DID</string>
+    <string name="claimSellerDID">판매자 DID</string>
+    <string name="claimBuyerDID">구매자 DID</string>
+    <string name="claimPrice">가격</string>
+    <string name="claimSellDate">판매날짜</string>
+    <string name="claimBlockNumber">블록번호</string>
+    <string name="claimIssuer">발행인</string>
+    <string name="claimDelegator">대리인</string>
+    <string name="claimVerifier">검증자</string>
+    <string name="claimVCtype">VC Type</string>
+    <string name="claimUni">학교</string>
+    <string name="claimUniNumber">학번</string>
+    <string name="claimUniGpa">학점</string>
+    <string name="claimUniDate">입학일자</string>
+    <string name="claimGraduateDate">졸업일자</string>
+    <string name="claimGroup">부서</string>
+    <string name="claimWorkerNumber">사원번호</string>
+    <string name="claimCompanyDate">입사일</string>
+    <string name="claimDeletorOwner">위임자</string>
+    <string name="claimProductName">물품명</string>
+    <string name="claimMakeDate">제조일</string>
+    <string name="claimUniName">학교</string>
+    <string name="claimUniNum">학번</string>
+    <string name="claimGraduationDate">졸업일자</string>
+
+    <string name="preVcID">주민등록번호</string>
+    <string name="preVcHint1">201026–1111111</string>
+    <string name="preVcHint2">010–1234–1234</string>
+    <string name="preVcHint3">2011000000</string>
+    <string name="preVcStockId">증권서비스 ID</string>
+    <string name="preVcHint4">ssi</string>
+    <string name="preVcStockStartDate">증권서비스 시작일</string>
+    <string name="preVcHint5">2010–10–12</string>
+    <string name="preVcCreate">생 성</string>
+
+    <string name="backupEmail">이메일</string>
+    <string name="backupSendNum">인증번호발송</string>
+    <string name="backupInputNum1">인증번호입력 1단계</string>
+    <string name="backupInputNum2">인증번호입력 2단계</string>
+    <string name="backupNumVerify">인증번호 검증</string>
+    <string name="backupNum">인증번호</string>
+    <string name="backupRequestAuth">인증요청</string>
+
+    <string name="contentdes">image</string>
+</resources>

@@ -1,0 +1,23 @@
+version: "3.5"
+networks:
+  default:
+    name: universal-resolver
+services:
+  driver-did-icon:
+    image: woosiiik/driver-did-icon:latest
+    environment:
+      uniresolver_driver_did_icon_node_url: ${uniresolver_driver_did_icon_node_url}
+      uniresolver_driver_did_icon_score_addr: ${uniresolver_driver_did_icon_score_addr}
+      uniresolver_driver_did_icon_network_id: ${uniresolver_driver_did_icon_network_id}
+    ports:
+      - "8091:8080"
+    volumes:
+      - ./drivers/icon/lib:/opt/driver-did-icon/lib
+  uni-resolver-driver-did-uport:
+    image: uport/uni-resolver-driver-did-uport:1.4.0
+    ports:
+      - "8083:8081"
+  uni-resolver-web:
+    image: universalresolver/uni-resolver-web:latest
+    ports:
+      - "8080:8080"

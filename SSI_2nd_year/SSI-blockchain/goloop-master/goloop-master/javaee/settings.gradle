@@ -1,0 +1,10 @@
+rootProject.name = 'goloop-javaee'
+include 'rt',
+    'api',
+    'exec',
+    'tooling',
+    'logger',
+    'samples',
+    'app:proxytest',
+    'app:execman',
+    'app:dappcomp'

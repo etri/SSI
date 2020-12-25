@@ -1,0 +1,53 @@
+[package]
+name = "null-payment-method"
+version = "1.15.0"
+authors = ["Hyperledger Indy Contributors <hyperledger-indy@lists.hyperledger.org>"]
+license = "MIT/Apache-2.0"
+description = """\
+This is a simple plugin that can be used for development of applications that use Payments API of Indy SDK."""
+build = "build.rs"
+
+[lib]
+name = "nullpay"
+crate-type = ["staticlib","cdylib", "rlib"]
+
+[features]
+# Causes the build to fail on all warnings
+fatal_warnings = []
+
+[dependencies]
+lazy_static = "1.3"
+libc = "0.2.66"
+env_logger = "0.5.10"
+log = "0.4.1"
+log-panics = "2.0.0"
+rand = "0.7"
+sha2 = "0.8.0"
+serde = "1.0.97"
+serde_json = "1.0.40"
+serde_derive = "1.0.97"
+
+[dev-dependencies]
+dirs = "1.0.4"
+indy = { version="1.15.0", path="../wrappers/rust" }
+
+[target.'cfg(target_os = "android")'.dependencies]
+android_logger = "0.5"
+
+[package.metadata.deb]
+depends = "libindy (= 1.15.0)"
+section = "devel"
+priority = "optional"
+assets = [
+    ["target/release/libnullpay.so", "usr/lib/", "644"]
+]
+maintainer-scripts = "./debian"
+changelog = "./debian/changelog"
+
+[package.metadata.deb.variants.libnullpay-xenial]
+name = "libnullpay"
+provides = "libnullpay (= 1.15.0)"
+
+[package.metadata.deb.variants.libnullpay-bionic]
+name = "libnullpay"
+provides = "libnullpay (= 1.15.0)"

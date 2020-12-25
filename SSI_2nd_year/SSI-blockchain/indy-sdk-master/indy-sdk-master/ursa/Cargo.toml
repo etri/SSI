@@ -1,0 +1,6 @@
+[workspace]
+members = [
+  "libursa",
+  "libzmix",
+  "libzmix/bulletproofs_amcl"
+]

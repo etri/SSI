@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c488e730-eda5-418b-8445-6a427c9f6704" name="Default Changelist" comment="Add: resolve cache 적용">
+      <change beforePath="$PROJECT_DIR$/src/main/java/uniresolver/driver/did/icon/DidIconDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uniresolver/driver/did/icon/DidIconDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uniresolver/driver/did/icon/IconDidService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uniresolver/driver/did/icon/IconDidService.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitRewordedCommitMessages">
+    <option name="commitMessagesMapping">
+      <RewordedCommitMessageMapping>
+        <option name="originalMessage" value="Convert: jetty 에서 spring boot 로 변환" />
+        <option name="rewordedMessage" value="Convert: jetty 에서 spring boot 로 변환" />
+      </RewordedCommitMessageMapping>
+    </option>
+    <option name="currentCommit" value="1" />
+    <option name="onto" value="5241a4868fbbbd72cd43dfeacf94c144de538f77" />
+  </component>
+  <component name="JupyterTrust" id="dba9d886-7442-428b-ac7e-888971ce3521" />
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1kqoCEpxKtTwtSRfkRP7rfm9aO4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.36178863" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/lib" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.IconUniresolverApplication">
+    <configuration name="uni-resolver-driver-did-icon [jetty:run...]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings">
+          <MavenRunnerSettings>
+            <option name="delegateBuildToMaven" value="false" />
+            <option name="environmentProperties">
+              <map>
+                <entry key="uniresolver_driver_did_icon_network_id" value="2" />
+                <entry key="uniresolver_driver_did_icon_node_url" value="https://test-ctz.solidwallet.io/api/v3" />
+                <entry key="uniresolver_driver_did_icon_score_addr" value="cx4b4543847d552e6cfbbfa55fbd4a9378534839f9" />
+              </map>
+            </option>
+            <option name="jreName" value="#USE_PROJECT_JDK" />
+            <option name="mavenProperties">
+              <map />
+            </option>
+            <option name="passParentEnv" value="true" />
+            <option name="runMavenInBackground" value="true" />
+            <option name="skipTests" value="false" />
+            <option name="vmOptions" value="" />
+          </MavenRunnerSettings>
+        </option>
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="jetty:run" />
+                <option value="-P" />
+                <option value="war" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="IconUniresolverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="uni-resolver-driver-did-icon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uniresolver.driver.did.icon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="uniresolver.driver.did.icon.IconUniresolverApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <envs>
+        <env name="uniresolver_driver_did_icon_score_addr" value="cx4b4543847d552e6cfbbfa55fbd4a9378534839f9" />
+        <env name="uniresolver_driver_did_icon_network_id" value="2" />
+        <env name="uniresolver_driver_did_icon_node_url" value="https://test-ctz.solidwallet.io/api/v3" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Maven.uni-resolver-driver-did-icon [jetty:run...]" />
+      <item itemvalue="Spring Boot.IconUniresolverApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.IconUniresolverApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c488e730-eda5-418b-8445-6a427c9f6704" name="Default Changelist" comment="" />
+      <created>1606437355391</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606437355391</updated>
+      <workItem from="1606437357641" duration="25142000" />
+      <workItem from="1606694036915" duration="431000" />
+      <workItem from="1606728024009" duration="5704000" />
+      <workItem from="1606779488346" duration="24292000" />
+      <workItem from="1606952106461" duration="1778000" />
+      <workItem from="1606962223491" duration="669000" />
+      <workItem from="1606970217294" duration="23000" />
+      <workItem from="1606975940544" duration="616000" />
+      <workItem from="1607391863371" duration="1963000" />
+      <workItem from="1607394375936" duration="2316000" />
+      <workItem from="1607680294636" duration="127000" />
+      <workItem from="1608539837736" duration="1074000" />
+      <workItem from="1608541113782" duration="674000" />
+      <workItem from="1608541958049" duration="50000" />
+    </task>
+    <task id="LOCAL-00001" summary="Update: uni-resolver 0.1.0 version 업데이트&#10;&#10;- repository 추가 (danubetech-maven-public)&#10;- uni-resolver version 0.1.0 으로 변경">
+      <created>1606469040307</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606469040308</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Update CHANGELOG.md">
+      <created>1606469621416</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1606469621416</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Convert: jetty 에서 spring boot 로 변환">
+      <created>1606783915337</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1606783915337</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Convert: jetty 에서 spring boot 로 변환">
+      <created>1606783937718</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606783937718</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add: properties api 추가">
+      <created>1606789092055</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606789092056</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Modify: debug option false 로 수정&#10;&#10;HTTP request/response body 로그 제거">
+      <created>1606791366292</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1606791366292</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add: resolve cache 적용">
+      <created>1607393989206</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1607393989206</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add: resolve cache 적용">
+      <created>1607394385493</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1607394385493</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Uncommit message">
+      <created>1607394453569</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1607394453569</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update: uni-resolver 0.1.0 version 업데이트&#10;&#10;- repository 추가 (danubetech-maven-public)&#10;- uni-resolver version 0.1.0 으로 변경" />
+    <MESSAGE value="Update CHANGELOG.md" />
+    <MESSAGE value="Convert: jetty 에서 spring boot 로 변환" />
+    <MESSAGE value="Add: properties api 추가" />
+    <MESSAGE value="Modify: debug option false 로 수정&#10;&#10;HTTP request/response body 로그 제거" />
+    <MESSAGE value="Add: resolve cache 적용" />
+    <MESSAGE value="Uncommit message" />
+    <option name="LAST_COMMIT_MESSAGE" value="Uncommit message" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="369" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607392869868">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state x="-1816" y="167" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.821/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606457257522" />
+    <state x="369" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.827@0.23.1440.827" timestamp="1607392869868" />
+    <state x="-1816" y="167" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.828/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606952120781" />
+    <state x="-1816" y="167" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.829/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606975954405" />
+    <state x="-175" y="-983" width="1771" height="909" key="DiffContextDialog" timestamp="1608541781143">
+      <screen x="-250" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="-2460" y="-103" width="2360" height="1217" key="DiffContextDialog/0.23.1440.816/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606442169957" />
+    <state x="-2460" y="-103" width="2360" height="1217" key="DiffContextDialog/0.23.1440.821/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606469284325" />
+    <state x="-175" y="-983" width="1771" height="909" key="DiffContextDialog/0.23.1440.827/-250.-1057.1920.1057@-250.-1057.1920.1057" timestamp="1607394029837" />
+    <state x="56" y="81" width="1328" height="711" key="DiffContextDialog/0.23.1440.827@0.23.1440.827" timestamp="1607392814386" />
+    <state x="-2460" y="-103" width="2360" height="1217" key="DiffContextDialog/0.23.1440.828/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606789174659" />
+    <state x="-175" y="-983" width="1771" height="909" key="DiffContextDialog/0.23.1440.830/-250.-1057.1920.1057@-250.-1057.1920.1057" timestamp="1607680423535" />
+    <state x="-175" y="-983" width="1771" height="909" key="DiffContextDialog/0.23.1440.877/-250.-1057.1920.1057@-250.-1057.1920.1057" timestamp="1608541781143" />
+    <state x="-1305" y="201" key="EnvironmentVariablesDialog" timestamp="1606457254880">
+      <screen x="-2560" y="-203" width="2560" height="1417" />
+    </state>
+    <state x="-1305" y="201" key="EnvironmentVariablesDialog/0.23.1440.821/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606457254880" />
+    <state x="541" y="-626" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1607394473080">
+      <screen x="-250" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="541" y="-626" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.23.1440.827/-250.-1057.1920.1057@-250.-1057.1920.1057" timestamp="1607394473080" />
+    <state width="1878" height="356" key="GridCell.Tab.0.bottom" timestamp="1607394029785">
+      <screen x="-250" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="2518" height="404" key="GridCell.Tab.0.bottom/0.23.1440.816/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606446655142" />
+    <state width="2518" height="404" key="GridCell.Tab.0.bottom/0.23.1440.821/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606467904294" />
+    <state width="1398" height="496" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1606455536728" />
+    <state width="2518" height="404" key="GridCell.Tab.0.bottom/0.23.1440.825/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606690915543" />
+    <state width="1878" height="356" key="GridCell.Tab.0.bottom/0.23.1440.827/-250.-1057.1920.1057@-250.-1057.1920.1057" timestamp="1607394029785" />
+    <state width="1398" height="496" key="GridCell.Tab.0.bottom/0.23.1440.827/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606693997746" />
+    <state width="1398" height="413" key="GridCell.Tab.0.bottom/0.23.1440.827@0.23.1440.827" timestamp="1607393300036" />
+    <state width="1878" height="67" key="GridCell.Tab.0.bottom/0.23.1440.828/-250.-1057.1920.1057@-250.-1057.1920.1057" timestamp="1606869325462" />
+    <state width="2518" height="404" key="GridCell.Tab.0.bottom/0.23.1440.828/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606810350125" />
+    <state width="1878" height="67" key="GridCell.Tab.0.bottom/0.23.1440.877/-250.-1057.1920.992@-250.-1057.1920.992" timestamp="1606874366422" />
+    <state width="1878" height="356" key="GridCell.Tab.0.center" timestamp="1607394029784">
+      <screen x="-250" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="2518" height="404" key="GridCell.Tab.0.center/0.23.1440.816/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606446655141" />
+    <state width="2518" height="404" key="GridCell.Tab.0.center/0.23.1440.821/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606467904292" />
+    <state width="1398" height="496" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1606455536727" />
+    <state width="2518" height="404" key="GridCell.Tab.0.center/0.23.1440.825/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606690915536" />
+    <state width="1878" height="356" key="GridCell.Tab.0.center/0.23.1440.827/-250.-1057.1920.1057@-250.-1057.1920.1057" timestamp="1607394029784" />
+    <state width="1398" height="496" key="GridCell.Tab.0.center/0.23.1440.827/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606693997745" />
+    <state width="1398" height="413" key="GridCell.Tab.0.center/0.23.1440.827@0.23.1440.827" timestamp="1607393300036" />
+    <state width="1878" height="67" key="GridCell.Tab.0.center/0.23.1440.828/-250.-1057.1920.1057@-250.-1057.1920.1057" timestamp="1606869325461" />
+    <state width="2518" height="404" key="GridCell.Tab.0.center/0.23.1440.828/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606810350124" />
+    <state width="1878" height="67" key="GridCell.Tab.0.center/0.23.1440.877/-250.-1057.1920.992@-250.-1057.1920.992" timestamp="1606874366421" />
+    <state width="1878" height="356" key="GridCell.Tab.0.left" timestamp="1607394029784">
+      <screen x="-250" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="2518" height="404" key="GridCell.Tab.0.left/0.23.1440.816/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606446655141" />
+    <state width="2518" height="404" key="GridCell.Tab.0.left/0.23.1440.821/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606467904292" />
+    <state width="1398" height="496" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1606455536727" />
+    <state width="2518" height="404" key="GridCell.Tab.0.left/0.23.1440.825/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606690915535" />
+    <state width="1878" height="356" key="GridCell.Tab.0.left/0.23.1440.827/-250.-1057.1920.1057@-250.-1057.1920.1057" timestamp="1607394029784" />
+    <state width="1398" height="496" key="GridCell.Tab.0.left/0.23.1440.827/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606693997744" />
+    <state width="1398" height="413" key="GridCell.Tab.0.left/0.23.1440.827@0.23.1440.827" timestamp="1607393300035" />
+    <state width="1878" height="67" key="GridCell.Tab.0.left/0.23.1440.828/-250.-1057.1920.1057@-250.-1057.1920.1057" timestamp="1606869325457" />
+    <state width="2518" height="404" key="GridCell.Tab.0.left/0.23.1440.828/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606810350123" />
+    <state width="1878" height="67" key="GridCell.Tab.0.left/0.23.1440.877/-250.-1057.1920.992@-250.-1057.1920.992" timestamp="1606874366420" />
+    <state width="1878" height="356" key="GridCell.Tab.0.right" timestamp="1607394029785">
+      <screen x="-250" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="2518" height="404" key="GridCell.Tab.0.right/0.23.1440.816/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606446655142" />
+    <state width="2518" height="404" key="GridCell.Tab.0.right/0.23.1440.821/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606467904293" />
+    <state width="1398" height="496" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1606455536727" />
+    <state width="2518" height="404" key="GridCell.Tab.0.right/0.23.1440.825/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606690915541" />
+    <state width="1878" height="356" key="GridCell.Tab.0.right/0.23.1440.827/-250.-1057.1920.1057@-250.-1057.1920.1057" timestamp="1607394029785" />
+    <state width="1398" height="496" key="GridCell.Tab.0.right/0.23.1440.827/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606693997745" />
+    <state width="1398" height="413" key="GridCell.Tab.0.right/0.23.1440.827@0.23.1440.827" timestamp="1607393300036" />
+    <state width="1878" height="67" key="GridCell.Tab.0.right/0.23.1440.828/-250.-1057.1920.1057@-250.-1057.1920.1057" timestamp="1606869325461" />
+    <state width="2518" height="404" key="GridCell.Tab.0.right/0.23.1440.828/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606810350125" />
+    <state width="1878" height="67" key="GridCell.Tab.0.right/0.23.1440.877/-250.-1057.1920.992@-250.-1057.1920.992" timestamp="1606874366421" />
+    <state width="1878" height="356" key="GridCell.Tab.1.bottom" timestamp="1607394029787">
+      <screen x="-250" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="2518" height="496" key="GridCell.Tab.1.bottom/0.23.1440.821/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606454844955" />
+    <state width="1398" height="496" key="GridCell.Tab.1.bottom/0.23.1440.821@0.23.1440.821" timestamp="1606455536730" />
+    <state width="1878" height="356" key="GridCell.Tab.1.bottom/0.23.1440.827/-250.-1057.1920.1057@-250.-1057.1920.1057" timestamp="1607394029787" />
+    <state width="1398" height="496" key="GridCell.Tab.1.bottom/0.23.1440.827/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606693997747" />
+    <state width="1398" height="413" key="GridCell.Tab.1.bottom/0.23.1440.827@0.23.1440.827" timestamp="1607393300038" />
+    <state width="1878" height="67" key="GridCell.Tab.1.bottom/0.23.1440.828/-250.-1057.1920.1057@-250.-1057.1920.1057" timestamp="1606869325464" />
+    <state width="2518" height="404" key="GridCell.Tab.1.bottom/0.23.1440.828/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606810350136" />
+    <state width="1878" height="67" key="GridCell.Tab.1.bottom/0.23.1440.877/-250.-1057.1920.992@-250.-1057.1920.992" timestamp="1606874366424" />
+    <state width="1878" height="356" key="GridCell.Tab.1.center" timestamp="1607394029786">
+      <screen x="-250" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="2518" height="496" key="GridCell.Tab.1.center/0.23.1440.821/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606454844954" />
+    <state width="1398" height="496" key="GridCell.Tab.1.center/0.23.1440.821@0.23.1440.821" timestamp="1606455536729" />
+    <state width="1878" height="356" key="GridCell.Tab.1.center/0.23.1440.827/-250.-1057.1920.1057@-250.-1057.1920.1057" timestamp="1607394029786" />
+    <state width="1398" height="496" key="GridCell.Tab.1.center/0.23.1440.827/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606693997747" />
+    <state width="1398" height="413" key="GridCell.Tab.1.center/0.23.1440.827@0.23.1440.827" timestamp="1607393300037" />
+    <state width="1878" height="67" key="GridCell.Tab.1.center/0.23.1440.828/-250.-1057.1920.1057@-250.-1057.1920.1057" timestamp="1606869325463" />
+    <state width="2518" height="404" key="GridCell.Tab.1.center/0.23.1440.828/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606810350127" />
+    <state width="1878" height="67" key="GridCell.Tab.1.center/0.23.1440.877/-250.-1057.1920.992@-250.-1057.1920.992" timestamp="1606874366423" />
+    <state width="1878" height="356" key="GridCell.Tab.1.left" timestamp="1607394029786">
+      <screen x="-250" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="2518" height="496" key="GridCell.Tab.1.left/0.23.1440.821/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606454844954" />
+    <state width="1398" height="496" key="GridCell.Tab.1.left/0.23.1440.821@0.23.1440.821" timestamp="1606455536728" />
+    <state width="1878" height="356" key="GridCell.Tab.1.left/0.23.1440.827/-250.-1057.1920.1057@-250.-1057.1920.1057" timestamp="1607394029786" />
+    <state width="1398" height="496" key="GridCell.Tab.1.left/0.23.1440.827/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606693997746" />
+    <state width="1398" height="413" key="GridCell.Tab.1.left/0.23.1440.827@0.23.1440.827" timestamp="1607393300037" />
+    <state width="1878" height="67" key="GridCell.Tab.1.left/0.23.1440.828/-250.-1057.1920.1057@-250.-1057.1920.1057" timestamp="1606869325463" />
+    <state width="2518" height="404" key="GridCell.Tab.1.left/0.23.1440.828/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606810350126" />
+    <state width="1878" height="67" key="GridCell.Tab.1.left/0.23.1440.877/-250.-1057.1920.992@-250.-1057.1920.992" timestamp="1606874366422" />
+    <state width="1878" height="356" key="GridCell.Tab.1.right" timestamp="1607394029787">
+      <screen x="-250" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="2518" height="496" key="GridCell.Tab.1.right/0.23.1440.821/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606454844955" />
+    <state width="1398" height="496" key="GridCell.Tab.1.right/0.23.1440.821@0.23.1440.821" timestamp="1606455536729" />
+    <state width="1878" height="356" key="GridCell.Tab.1.right/0.23.1440.827/-250.-1057.1920.1057@-250.-1057.1920.1057" timestamp="1607394029787" />
+    <state width="1398" height="496" key="GridCell.Tab.1.right/0.23.1440.827/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606693997747" />
+    <state width="1398" height="413" key="GridCell.Tab.1.right/0.23.1440.827@0.23.1440.827" timestamp="1607393300038" />
+    <state width="1878" height="67" key="GridCell.Tab.1.right/0.23.1440.828/-250.-1057.1920.1057@-250.-1057.1920.1057" timestamp="1606869325463" />
+    <state width="2518" height="404" key="GridCell.Tab.1.right/0.23.1440.828/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606810350128" />
+    <state width="1878" height="67" key="GridCell.Tab.1.right/0.23.1440.877/-250.-1057.1920.992@-250.-1057.1920.992" timestamp="1606874366423" />
+    <state x="-1742" y="167" key="Maven.ArtifactSearchDialog" timestamp="1606693896764">
+      <screen x="-2560" y="-203" width="2560" height="1417" />
+    </state>
+    <state x="-1742" y="167" key="Maven.ArtifactSearchDialog/0.23.1440.827/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606693896764" />
+    <state x="-1660" y="131" key="RollbackChangesDialog" timestamp="1606465076739">
+      <screen x="-2560" y="-203" width="2560" height="1417" />
+    </state>
+    <state x="-1660" y="131" key="RollbackChangesDialog/0.23.1440.816/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606451092906" />
+    <state x="-1660" y="131" key="RollbackChangesDialog/0.23.1440.821/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606465076739" />
+    <state x="326" y="-841" width="1086" height="722" key="SettingsEditor" timestamp="1608541083693">
+      <screen x="-250" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="-1792" y="87" width="1448" height="837" key="SettingsEditor/0.23.1440.816/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606446633965" />
+    <state x="326" y="-841" width="1086" height="722" key="SettingsEditor/0.23.1440.877/-250.-1057.1920.1057@-250.-1057.1920.1057" timestamp="1608541083693" />
+    <state x="-1578" y="215" width="596" height="580" key="find.popup" timestamp="1606446420788">
+      <screen x="-2560" y="-203" width="2560" height="1417" />
+    </state>
+    <state x="-1578" y="215" width="596" height="580" key="find.popup/0.23.1440.816/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606446420788" />
+    <state x="-1681" y="71" key="new project wizard" timestamp="1606803278946">
+      <screen x="-2560" y="-203" width="2560" height="1417" />
+    </state>
+    <state x="-1681" y="71" key="new project wizard/0.23.1440.828/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606803278946" />
+    <state x="459" y="-815" width="670" height="505" key="search.everywhere.popup" timestamp="1608540662037">
+      <screen x="-250" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="-1615" y="122" width="670" height="676" key="search.everywhere.popup/0.23.1440.816/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606452656154" />
+    <state x="-1615" y="122" width="670" height="676" key="search.everywhere.popup/0.23.1440.821/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606469643987" />
+    <state x="-1615" y="122" width="670" height="676" key="search.everywhere.popup/0.23.1440.828/-2560.-203.2560.1417@-2560.-203.2560.1417" timestamp="1606952392118" />
+    <state x="459" y="-815" width="670" height="505" key="search.everywhere.popup/0.23.1440.877/-250.-1057.1920.1057@-250.-1057.1920.1057" timestamp="1608540662037" />
+  </component>
+</project>

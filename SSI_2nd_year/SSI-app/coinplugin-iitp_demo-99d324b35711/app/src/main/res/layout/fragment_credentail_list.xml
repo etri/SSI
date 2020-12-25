@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout2"
+    tools:context=".activity.MainActivity">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="activity"
+            type="com.iitp.iitp_demo.activity.MainActivity" />
+    </data>
+
+    <LinearLayout
+        android:background="@color/backgroundColor"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/idListLayout"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_marginTop="20sp">
+
+            <TextView
+                android:id="@+id/idListTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dids_vclist"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/underLine2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/idListTitle"
+                android:layout_marginTop="5dp"
+                android:background="@color/thinLineColor" />
+        </RelativeLayout>
+
+        <ListView
+            android:divider="@color/thinLineColor"
+            android:dividerHeight="1dp"
+            android:id="@+id/credentialList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/list_item_credential"/>
+    </LinearLayout>
+</layout>

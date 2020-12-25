@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout2"
+    tools:context=".activity.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundColor">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/layout_appbar_new" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/claimName"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/white"
+                        android:longClickable="false"
+                        android:maxLength="5"
+                        android:paddingStart="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/blackText"
+                        android:textCursorDrawable="@drawable/cursor_color"
+                        tools:text="이병선"
+                        tools:ignore="Autofill,LabelFor,RtlSymmetry,TextFields" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/preVcID"
+
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/birth"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/white"
+                        android:hint="@string/preVcHint1"
+                        android:inputType="number"
+                        android:longClickable="false"
+                        android:maxLength="14"
+                        android:paddingStart="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/blackText"
+                        android:textCursorDrawable="@drawable/cursor_color"
+                        tools:ignore="Autofill,RtlSymmetry" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/claimAddress"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/address"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/white"
+                        android:longClickable="false"
+                        android:maxLength="30"
+                        android:paddingStart="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/blackText"
+                        android:textCursorDrawable="@drawable/cursor_color"
+                        tools:ignore="Autofill,LabelFor,RtlSymmetry,TextFields" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/claimPhone"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/phoneNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/white"
+                        android:hint="@string/preVcHint2"
+                        android:inputType="phone"
+                        android:longClickable="false"
+                        android:maxLength="13"
+                        android:paddingStart="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/blackText"
+                        android:textCursorDrawable="@drawable/cursor_color"
+                        tools:ignore="Autofill,RtlSymmetry" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/claimUniNumber"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/school_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/white"
+                        android:hint="@string/preVcHint3"
+                        android:inputType="number"
+                        android:longClickable="false"
+                        android:maxLength="10"
+                        android:paddingStart="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/blackText"
+                        android:textCursorDrawable="@drawable/cursor_color"
+                        tools:ignore="Autofill,RtlSymmetry" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/claimUniDate"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/school_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/white"
+                        android:hint="@string/preVcHint5"
+                        android:inputType="date"
+                        android:longClickable="false"
+                        android:maxLength="10"
+                        android:paddingStart="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/blackText"
+                        android:textCursorDrawable="@drawable/cursor_color"
+                        tools:ignore="Autofill,RtlSymmetry" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/preVcStockId"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/stock_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/white"
+                        android:hint="@string/preVcHint4"
+                        android:inputType="text"
+                        android:longClickable="false"
+                        android:maxLength="20"
+                        android:paddingStart="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/blackText"
+                        android:textCursorDrawable="@drawable/cursor_color"
+                        tools:ignore="Autofill,RtlSymmetry" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/preVcStockStartDate"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/stock_start_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/white"
+                        android:hint="@string/preVcHint5"
+                        android:inputType="date"
+                        android:longClickable="false"
+                        android:maxLength="10"
+                        android:paddingStart="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/blackText"
+                        android:textCursorDrawable="@drawable/cursor_color"
+                        tools:ignore="Autofill,RtlSymmetry" />
+
+                    <Button
+                        android:id="@+id/publish"
+                        style="@style/AppTheme.PrimaryButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="@string/preVcCreate" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/progresslayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#B31E1F28"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:indeterminateTint="@color/tabTextSelect" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

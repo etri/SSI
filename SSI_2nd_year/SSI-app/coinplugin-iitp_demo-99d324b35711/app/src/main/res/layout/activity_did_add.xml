@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundColor">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/layout_appbar_new"
+            android:paddingStart="-20dp"
+            android:paddingEnd="-20dp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+
+
+            <TextView
+                android:id="@+id/nicknameTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/add_did_nick_title"
+                android:textColor="@color/tabTextUnselect"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/nickEditText"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="true"
+                android:hint="@string/add_did_nick_hint"
+                android:singleLine="true"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/nicknameTitle"
+                tools:layout_editor_absoluteX="20dp"
+                tools:ignore="Autofill,TextFields" />
+
+            <TextView
+                android:id="@+id/BlockChainTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/add_did_blockchain"
+                android:textColor="@color/tabTextUnselect"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nickEditText" />
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/BlockChainTitle">
+
+                <RelativeLayout
+                    android:id="@+id/metadiumLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="122dp"
+                        android:layout_height="28dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/img_metadium"
+                        tools:ignore="ContentDescription" />
+
+                    <RadioButton
+                        android:id="@+id/rg_btn1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:buttonTint="@color/buttonBackgroundColor1" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/iconLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="168dp"
+                        android:layout_height="28dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/img_icon"
+                        tools:ignore="ContentDescription" />
+
+                    <RadioButton
+                        android:id="@+id/rg_btn3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="20dp"
+                        android:buttonTint="@color/buttonBackgroundColor1" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/indyLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="28dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/img_indy"
+                        tools:ignore="ContentDescription" />
+
+                    <RadioButton
+                        android:id="@+id/rg_btn2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:buttonTint="@color/buttonBackgroundColor1" />
+                </RelativeLayout>
+
+
+            </RadioGroup>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <RelativeLayout
+            android:id="@+id/progresslayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#B31E1F28"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="-3dp"
+            tools:layout_editor_absoluteY="-56dp">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:indeterminateTint="@color/tabTextSelect" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

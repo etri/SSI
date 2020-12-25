@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout2"
+    tools:context=".activity.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/backgroundColor"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/layout_appbar_new" />
+
+            <RelativeLayout
+                android:id="@+id/layoutAuth1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/backupEmail"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/emailEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/white"
+                        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ @. 0123456789"
+                        android:inputType="textEmailAddress"
+                        android:longClickable="false"
+                        android:paddingStart="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/blackText"
+                        android:textCursorDrawable="@drawable/cursor_color"
+                        tools:text="이병선"
+                        tools:ignore="Autofill,LabelFor,RtlSymmetry" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/claimPhone"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/phoneEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/white"
+                        android:inputType="phone"
+                        android:longClickable="false"
+                        android:maxLength="11"
+                        android:paddingStart="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/blackText"
+                        android:textCursorDrawable="@drawable/cursor_color"
+                        tools:text="01011111111"
+                        tools:ignore="Autofill,LabelFor,RtlSymmetry" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/requestAuth"
+                    style="@style/AppTheme.PrimaryButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="@string/backupSendNum" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutAuth2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/auth1Text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/backupInputNum1"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <EditText
+                            android:id="@+id/auth1Edit"
+                            android:layout_width="0dp"
+                            android:layout_height="41dp"
+                            android:layout_below="@+id/auth1Text"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_toStartOf="@+id/authCode1Img"
+                            android:background="@color/white"
+                            android:inputType="number"
+                            android:longClickable="false"
+                            android:maxLength="6"
+                            android:paddingStart="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/blackText"
+                            android:textCursorDrawable="@drawable/cursor_color"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/authCode1Img"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/auth1Text"
+                            tools:ignore="Autofill,LabelFor,RtlSymmetry" />
+
+                        <ImageView
+                            android:id="@+id/authCode1Img"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignBaseline="@+id/auth1Edit"
+                            android:layout_alignParentEnd="true"
+                            android:background="@drawable/ic_backup_confirm"
+                            android:visibility="invisible"
+                            app:layout_constraintBottom_toBottomOf="@+id/auth1Edit"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/auth1Edit"
+                            tools:ignore="ContentDescription" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/authInput2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/auth2Text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/backupInputNum2"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <EditText
+                            android:id="@+id/auth2Edit"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@color/white"
+                            android:inputType="number"
+                            android:maxLength="6"
+                            android:paddingStart="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/blackText"
+                            android:textCursorDrawable="@drawable/cursor_color"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/authCode2Img"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/auth2Text"
+                            tools:ignore="Autofill,LabelFor,RtlSymmetry" />
+
+                        <ImageView
+                            android:id="@+id/authCode2Img"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignBaseline="@+id/auth2Edit"
+                            android:layout_alignParentEnd="true"
+                            android:background="@drawable/ic_backup_confirm"
+                            android:visibility="invisible"
+                            app:layout_constraintBottom_toBottomOf="@+id/auth2Edit"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/auth2Edit"
+                            tools:ignore="ContentDescription" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/requestAuthNumber"
+                    style="@style/AppTheme.PrimaryButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="@string/backupNumVerify" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/layoutAuth3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/authSMSText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/backupNum"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <EditText
+                            android:id="@+id/authSMSEdit"
+                            android:layout_width="0dp"
+                            android:layout_height="41dp"
+                            android:layout_below="@+id/authSMSText"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_toStartOf="@+id/authCodeSMSImg"
+                            android:background="@color/white"
+                            android:inputType="number"
+                            android:longClickable="false"
+                            android:maxLength="6"
+                            android:paddingStart="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/blackText"
+                            android:textCursorDrawable="@drawable/cursor_color"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/authCodeSMSImg"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/authSMSText"
+                            tools:ignore="Autofill,LabelFor,RtlSymmetry" />
+
+                        <ImageView
+                            android:id="@+id/authCodeSMSImg"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignBaseline="@+id/authSMSEdit"
+                            android:layout_alignParentEnd="true"
+                            android:background="@drawable/ic_backup_confirm"
+                            android:visibility="invisible"
+                            app:layout_constraintBottom_toBottomOf="@+id/authSMSEdit"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/authSMSEdit"
+                            tools:ignore="ContentDescription" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/requestAuthNumber2"
+                    style="@style/AppTheme.PrimaryButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="@string/backupNumVerify" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/progresslayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#B31E1F28"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:indeterminateTint="@color/tabTextSelect" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

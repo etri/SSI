@@ -1,0 +1,55 @@
+[package]
+name = "indy-cli"
+version = "1.15.0"
+authors = ["Hyperledger Indy Contributors <hyperledger-indy@lists.hyperledger.org>"]
+license = "MIT/Apache-2.0"
+description = """\
+This is the official command line interface for Indy SDK,\
+which provides a distributed-ledger-based foundation for self-sovereign\
+identity."""
+edition = "2018"
+
+[features]
+nullpay_plugin = []
+
+# Causes the build to fail on all warnings
+fatal_warnings = []
+
+[dependencies]
+atty = "0.2"
+ansi_term = "0.11"
+chrono = "0.4"
+dirs = "1.0.4"
+unescape = "0.1"
+lazy_static = "1.3"
+libc = "0.2"
+libloading = "0.5.0"
+linefeed = "0.3"
+log = "0.4.1"
+log4rs = "0.8.0"
+prettytable-rs = "0.6.7"
+regex = "0.2"
+serde = "1.0.97"
+serde_json = "1.0.40"
+serde_derive = "1.0.97"
+term = "0.4.6"
+rpassword = "1.0.0"
+indy = { version = "1.15.0", path = "../wrappers/rust/" }
+
+[package.metadata.deb]
+depends = "libindy (= 1.15.0), libncursesw5-dev"
+section = "devel"
+priority = "optional"
+assets = [
+    ["target/release/indy-cli", "usr/bin/", "755"]
+]
+maintainer-scripts = "./debian"
+changelog = "./debian/changelog"
+
+[package.metadata.deb.variants.indy-cli-xenial]
+name = "indy-cli"
+provides = "indy-cli (= 1.15.0)"
+
+[package.metadata.deb.variants.indy-cli-bionic]
+name = "indy-cli"
+provides = "indy-cli (= 1.15.0)"

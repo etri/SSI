@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="robotoTextView" parent="android:Widget.DeviceDefault.TextView">
+        <item name="android:fontFamily">@font/custom_font_family</item>
+        <item name="android:textColor">@color/market_color_black</item>
+    </style>
+    <style name="robotoButton" parent="android:Widget.DeviceDefault.Button">
+        <item name="android:fontFamily">@font/custom_font_family</item>
+    </style>
+    <style name="robotoEditText" parent="android:Widget.DeviceDefault.EditText">
+        <item name="android:fontFamily">@font/custom_font_family</item>
+    </style>
+    <style name="robotoRadioButton" parent="android:Widget.DeviceDefault.CompoundButton.RadioButton">
+        <item name="android:fontFamily">@font/custom_font_family</item>
+    </style>
+    <style name="robotoCheckBox" parent="android:Widget.DeviceDefault.CompoundButton.CheckBox">
+        <item name="android:fontFamily">@font/custom_font_family</item>
+    </style>
+    
+</resources>

@@ -1,0 +1,11 @@
+server:
+  port: 8080
+logging:
+#  config: classpath:application-logback.xml
+  level:
+    uniresolver.driver.did.icon: debug
+network:
+  endpoint: http://localhost:9000/api/v3
+  networkId: 3
+  did-score: cxc9b8fb32bf9d5467a65408cc983177e25f0e763e
+

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "375922585132",
+    "firebase_url": "https://ssishop.firebaseio.com",
+    "project_id": "ssishop",
+    "storage_bucket": "ssishop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:375922585132:android:cb349e7a860d857e96ab89",
+        "android_client_info": {
+          "package_name": "com.bd.ssishop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "375922585132-5c01lg9fosl7gbbpgjvnjdbk6spdrk4d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAx9FclsYPspb_-FfT2pGqlNWU4GJ4kt80"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "375922585132-5c01lg9fosl7gbbpgjvnjdbk6spdrk4d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

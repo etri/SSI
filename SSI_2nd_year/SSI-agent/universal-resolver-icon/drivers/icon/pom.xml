@@ -1,0 +1,91 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>uni-resolver-driver-did-icon</artifactId>
+	<name>uni-resolver-driver-did-icon</name>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.2.2.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+
+	<repositories>
+		<repository>
+			<id>danubetech-maven-public</id>
+			<url>https://repo.danubetech.com/repository/maven-public/</url>
+		</repository>
+		<repository>
+			<id>localrepository</id>
+			<url>file://${basedir}/lib</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+		<!-- universal resolver -->
+		<dependency>
+			<groupId>decentralized-identity</groupId>
+			<artifactId>uni-resolver-driver</artifactId>
+			<version>0.1.0</version>
+			<scope>compile</scope>
+         </dependency>
+		<dependency>
+           <groupId>org.json</groupId>
+           <artifactId>json</artifactId>
+           <version>20171018</version>
+			<scope>compile</scope>
+		</dependency>
+
+        <!-- for ICON DID -->
+        <dependency>
+            <groupId>foundation.icon</groupId>
+            <artifactId>icon-sdk</artifactId>
+            <version>0.9.11</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>logging-interceptor</artifactId>
+            <version>3.4.1</version>
+        </dependency>
+
+		<dependency>
+			<groupId>did</groupId>
+			<artifactId>icon-did</artifactId>
+			<version>0.8.6</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.github.ben-manes.caffeine</groupId>
+			<artifactId>caffeine</artifactId>
+			<version>2.8.6</version>
+		</dependency>
+
+		<!--spring boot-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.25</version>
+			<scope>compile</scope>
+		</dependency>
+
+	</dependencies>
+
+</project>

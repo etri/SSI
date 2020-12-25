@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "89527717774",
+    "firebase_url": "https://ssi-fcm.firebaseio.com",
+    "project_id": "ssi-fcm",
+    "storage_bucket": "ssi-fcm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:89527717774:android:56cb193ce809f9ea8c1edf",
+        "android_client_info": {
+          "package_name": "com.iitp.iitp_demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "89527717774-ji0h14mukktpvbtke1vlgluupv4qmplm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_r4BoT1ySquGYpKD6-UZDVRCEDwL65E4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "89527717774-ji0h14mukktpvbtke1vlgluupv4qmplm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

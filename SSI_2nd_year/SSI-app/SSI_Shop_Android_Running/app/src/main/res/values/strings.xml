@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">SSI Shop</string>
+    <string name="btn_api1">프로덕트 리스트</string>
+    <string name="title_activity_product">ProductActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_product">Men\'s Watches</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_deal">구매/판매 내역</string>
+    <string name="menu_register">상품 등록</string>
+    <string name="menu_init">초기화</string>
+
+    <string name="fragment_product_detail">상품 정보</string>
+    <string name="fragment_product_purchase">결제</string>
+    <string name="fragment_product_complete">결제 완료</string>
+
+    <string name="fragment_deal_detail">상세 거래 정보</string>
+    <string name="fragment_register_complete">등록 완료</string>
+
+    <string name="nav_push_detail_deal">VC목록생성</string>
+
+    <string-array name="lst_payment">
+        <item>신용카드</item>
+        <item>무통장입금/계좌이체</item>
+        <item>간편결제</item>
+    </string-array>
+
+    <string-array name="card_com_list">
+        <item>한국카드</item>
+        <item>서울카드</item>
+<!--        <item>대전카드</item>-->
+<!--        <item>대구카드</item>-->
+<!--        <item>광주카드</item>-->
+    </string-array>
+</resources>
