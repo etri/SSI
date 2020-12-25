@@ -16,7 +16,7 @@ SSI_1st_year Project is in accordance with Free Software Foundation (FSF)'s open
 SSI-app, SSI-agent, SSI-blockchain/SSI-icon-blockchain of SSI_1st_year Project are, in principle, subject to Apache License 2.0, and SSI-blockchain/SSI-meta-blockchain of SSI_1st_year Project is in principle, subject to GNU Lesser General Public License v3.0 only. If you have acquired all or a part of the SSI_1st_year Project in any way and it is subject to a license other than the open source license described above, please contact the following address for the technical support and other inquiries before use, and check the usage information.
 
 ### Technical Support and Other Inquiries
-If you have any questions about licensing and sales of DeepGuider Project, and other technical support services, please contact the following:
+If you have any questions about licensing and sales of SSI_1st_year Project, and other technical support services, please contact the following:
 * Name: Daegeun Yoon
 * E-mail: <dayoon@etri.re.kr>
 * Phone: +82-42-860-0861
