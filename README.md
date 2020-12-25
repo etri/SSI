@@ -3,7 +3,7 @@ _SSI Project_ is a research project funded by national government (Full name of 
 
 Each _SSI_1st_year_ and _SSI_2nd_year_ directory works with follow scenarios:
 * **SSI_1st_year**
-  * The owner requests the government ID with his DID, and the government issues government ID as a VC with the government’s signature. 
+  * The owner requests the government ID with his DID, and the government issues the owner's government ID as a VC with the government’s signature. 
   * The owner applies for a job with the government ID VC. If the company verify the VC with the owners DID and the government’s signature, the company issues a job certificate VC to the owner.
   * The owner applies for a loan with the government ID VC and the job certificate VC. The bank allows the application if both VCs are valid.
 
