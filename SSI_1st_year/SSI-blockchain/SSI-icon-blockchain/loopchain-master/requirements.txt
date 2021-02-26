@@ -2,7 +2,7 @@ grpcio==1.25.0
 grpcio-tools==1.25.0
 protobuf==3.7.0
 aio-pika==3.0.1
-aiohttp==3.4.4
+aiohttp==3.7.4
 coloredlogs==10.0
 earlgrey==0.0.4
 fluent-logger==0.9.3
