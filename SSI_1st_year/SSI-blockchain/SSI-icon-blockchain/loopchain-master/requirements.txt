@@ -1,6 +1,6 @@
 grpcio==1.25.0
 grpcio-tools==1.25.0
-protobuf==3.7.0
+protobuf==3.18.3
 aio-pika==3.0.1
 aiohttp==3.4.4
 coloredlogs==10.0
